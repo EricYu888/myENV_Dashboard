@@ -24,7 +24,7 @@ export class WeatherService {
     }
     let shanghai = {
       temp: "35",
-      weather: "Sun",
+      weather: "Sunny",
       wet: "80",
       pic: "leftImg icon iconfont icon-sun",
       psi: "25",
