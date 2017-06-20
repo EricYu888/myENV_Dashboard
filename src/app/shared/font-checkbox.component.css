@@ -1,0 +1,36 @@
+.thumb{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  cursor:pointer;
+  float:left;
+  width:100%;
+}
+.thumb .fa{
+  float:left;
+  margin-right:5px;
+  line-height:25px;
+}
+.content-block{
+  display: inline-block;
+  width:80%;
+  float:left;
+  text-align: left;
+  word-break: break-all;
+}
+.m2 {
+  margin-top: 2px;
+}
+.fa .m2 {
+  width: 20% !important;
+}
+
+.thumb-line{
+   display: flex;
+   align-items: center;
+ }
+

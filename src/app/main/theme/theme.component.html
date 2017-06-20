@@ -1,0 +1,39 @@
+<h4 class="control-sidebar-heading">{{ 'SIDEBAR.THEME' | translate }}</h4>
+
+<!--<div class="row">
+    <div class="col-md-6">
+        <a href="javascript:void(0);" class="btn btn-default btn-flat" style="width:100%;" (click)="onChangeThemeClick('theme-blue-dark')">{{ 'SIDEBAR.THEME-BLUE-DARK' | translate }}</a>
+    </div>
+    <div class="col-md-6">
+        <a href="javascript:void(0);" class="btn btn-default btn-flat" style="width:100%;" (click)="onChangeThemeClick('theme-black-dark')">{{ 'SIDEBAR.THEME-BLACK-DARK' | translate }}</a>
+    </div>
+</div>-->
+
+<select class="form-control" #themeSelect (change)="changeSelectTheme(themeSelect.value)">
+    <option *ngFor="let theme of themes" [value]="theme" [selected]="theme === themes.currentTheme">
+        {{ theme | translate }}
+        </option>
+</select>
+
+<!--<ul class="list-unstyled clearfix">
+    <li style="float:left; width: 50%; padding: 5px;">
+        <a href="javascript:void(0);" (click)="onChangeThemeClick('theme-blue-dark')" style="display: block; box-shadow: 0 0 3px rgba(0,0,0,0.4)"
+            class="clearfix full-opacity-hover">
+            <div><span style="display:block; width: 20%; float: left; height: 13px; background: #265dab;"></span>
+                <span class="bg-blue-dark" style="background:#265dab; display:block; width: 80%; float: left; height: 13px;"></span>
+            </div>
+            <div><span style="display:block; width: 20%; float: left; height: 30px; background: #2c404c;"></span><span style="display:block; width: 80%; float: left; height: 30px; background: #f4f5f7;"></span></div>
+        </a>
+        <p class="text-center no-margin" style="font-size: 12px;">{{ 'SIDEBAR.THEME-BLUE-DARK' | translate }}</p>
+    </li>
+    <li style="float:left; width: 50%; padding: 5px;">
+        <a href="javascript:void(0);" (click)="onChangeThemeClick('theme-black-dark')" style="display: block; box-shadow: 0 0 3px rgba(0,0,0,0.4)"
+            class="clearfix full-opacity-hover">
+            <div><span style="display:block; width: 20%; float: left; height: 13px; background: #1b2a33;"></span>
+                <span class="bg-black-dark" style="background:#1b2a33; display:block; width: 80%; float: left; height: 13px;"></span>
+            </div>
+            <div><span style="display:block; width: 20%; float: left; height: 30px; background: #425866;"></span><span style="display:block; width: 80%; float: left; height: 30px; background: #f4f5f7;"></span></div>
+        </a>
+        <p class="text-center no-margin" style="font-size: 12px;">{{ 'SIDEBAR.THEME-BLACK-DARK' | translate }}</p>
+    </li>
+</ul>-->

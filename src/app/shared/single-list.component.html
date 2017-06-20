@@ -1,0 +1,26 @@
+<div class="box box-solid cm-box-default">
+  <div class="box-header with-border">
+    <h3 class="box-title">{{header | translate}}</h3>
+    <div class="box-tools">
+      <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+          </button>
+    </div>
+  </div>
+  <div class="box-body no-padding slimscroll-box common-check">
+    <!--Single choice-->
+    <ul class="nav nav-pills nav-stacked" *ngIf="singleFlag">
+      <li *ngFor="let item of list;let i=index" (click)="onItemClick(item,$event)" [class.activity]="defaultIndex[item.key]" [class.readonly]="readFlag">
+        <a href="javascript:void(0)">{{item.val.name}}</a>
+      </li>
+    </ul>
+    <!--Multiple choice-->
+    <ul class="nav nav-pills nav-stacked" *ngIf="!singleFlag">
+      <li *ngFor="let item of list;let i=index" (click)="onMultipleItemClick(item,$event)" [class.readonly]="readFlag">
+        <a href="javascript:void(0)">
+          <i class="fa" [class.fa-check-square-o]="defaultIndex[item.key]" [class.fa-square-o]="!defaultIndex[item.key]" (click)="toggleCheck(item,$event)"
+            *ngIf="!readFlag"></i> {{item.val.name}}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

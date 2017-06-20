@@ -1,0 +1,5 @@
+<h4 class="control-sidebar-heading">{{ selectStr | translate }}</h4>
+<!--<h5 class="control-sidebar-heading">{{ 'Localize.SELECT' | translate }}</h5>-->
+<select class="form-control" #langSelect (change)="translate.use(langSelect.value);changeLanguage(langSelect.value)">
+    <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ getSelectLangStr(lang) }}</option>
+</select>

@@ -1,0 +1,1295 @@
+{
+    "HOME": {
+        "TITLE": "你好 Angular 2 with ngx-translate!",
+        "SELECT": "语言"
+    },
+    "theme-blue-dark": "浅色",
+    "theme-black-dark": "深色",
+    "LOCALIZE": {
+        "SELECT": "语言"
+    },
+    "LOGO": {
+        "GMOC": "数据中心"
+    },
+    "LOGIN": {
+        "TITLE": "北京国际电力数据监测诊断中心",
+        "FORM_COMPOSITION": {
+            "USERNAME": "用户名",
+            "PASSWORD": "密码",
+            "REGISTER": "注册",
+            "FORGETPASSWORD": "忘记密码",
+            "LOGIN": "登录"
+        },
+        "FORM_INVALIDATE": {
+            "USERNAME_REQUIRED": "请输入用户名!",
+            "PASSWORD_REQUIRED": "请输入密码!"
+        },
+        "USER2002": "登录失败，用户名或密码错误。",
+        "USER2005": "登录失败，用户未激活，请联系管理员。"
+    },
+    "HEADER": {
+        "SIGNOUT": "退出"
+    },
+    "SIDEBAR": {
+        "THEME": "主题",
+        "THEME-BLUE-DARK": "明亮",
+        "THEME-BLACK-DARK": "蓝色",
+        "MENU": {
+            "Alert": "baojing",
+            "Case": "Case",
+            "Knowledge Search": "Knowledge Search",
+            "Dashboards": "Dashboards",
+            "Configuration": "Configuration",
+            "Emap": "Emap",
+            "All": "All",
+            "More Filters": "More Filters",
+            "Open": "Open",
+            "In-process": "Configuration",
+            "Close": "Emap",
+            "My Cases": "Emap",
+            "Power Plant Map": "Power Plant Map",
+            "My fleet": "My fleet",
+            "Fixed KPI": "Fixed KPI",
+            "Customized KPI": "Customized KPI",
+            "Case/Alert": "Case/Alert",
+            "Asset Status": "Asset Status",
+            "Operation Count": "Configuration",
+            "User Management": "User Management",
+            "Role Management": "Role Management",
+            "Permission Management": "Permission Management",
+            "Message Management": "Message Management",
+            "KPI Management": "KPI Management",
+            "Import/Export Management": "Import/Export Management",
+            "Asset Management": "Asset Management",
+            "Site": "Site",
+            "Plant": "Plant",
+            "Block": "Block",
+            "Unit": "Unit",
+            "Asset": "Asset",
+            "Tag": "Tag"
+        }
+    },
+    "USER": {
+        "PROPERTIES": {
+            "id": "身份标识",
+            "loginname": "登录名称",
+            "realname": "真实姓名",
+            "office": "办公室",
+            "title": "标题",
+            "tel": "电话",
+            "mobile": "手机",
+            "email": "电子邮件",
+            "company": "公司",
+            "STATUS": "状态",
+            "activation": "激活",
+            "deactivation": "未激活"
+        },
+        "LIST": {
+            "TITLE": "用户列表",
+            "HEADER": {
+                "USERNAME": "真实姓名",
+                "COMPANY": "公司",
+                "EMAIL": "电子邮件",
+                "LOGINNAME": "用户名",
+                "OFFICE": "办公室",
+                "TITLE": "标题",
+                "PLANT": "电厂",
+                "ROLE": "角色"
+            },
+            "PLANT_DEFAULT": "---电厂---",
+            "ROLE_DEFAULT": "---角色---"
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "您已经成功更新该用户信息",
+            "CREATE_SUCCESS": "您已经成功创建新用户"
+        },
+        "DETAIL": {
+            "TITLE": "用户详情",
+            "LOGINNAME": "用户名",
+            "REALNAME": "真实姓名",
+            "OFFICE": "办公室",
+            "TEL": "电话",
+            "MOBILE": "手机",
+            "EMAIL": "电子邮件",
+            "COMPANY": "公司",
+            "IMAGE_INVALIDATE": {
+                "ERROR": "上传文件格式不正确!",
+                "SUCCESS": "您已经成功上传图片!"
+            }
+        },
+        "CREATION": {
+            "ROLE_LIST": "角色列表",
+            "PLANT_LIST": "电厂列表",
+            "PROFILE": "基本信息",
+            "Real Name": "真实姓名",
+            "Title": "标题",
+            "Email": "邮件",
+            "Username": "用户名",
+            "Password": "密码",
+            "Phone": "电话",
+            "Mobile": "手机号码",
+            "Office": "办公室",
+            "Photo": "照片",
+            "Add File": "添加头像",
+            "ROLE_LIST_HEADER": "角色列表",
+            "PLANT_LIST_HEADER": "电厂列表"
+        },
+        "FORM_INVALIDATE": {
+            "REAL_NAME_REQUIRED": "请输入真实姓名!",
+            "TITLE_REQUIRED": "请输入标题!",
+            "EMAIL_REQUIRED": "请输入正确的电子邮箱!",
+            "LOGIN_NAME_REQUIRED": "请输入用户姓名!",
+            "PWD_REQUIRED": "请输入密码!",
+            "PHONE_REQUIRED": "请输入电话号码!",
+            "MOBILE_REQUIRED": "请输入手机号码!",
+            "OFFICE_REQUIRED": "请输入办公室名称!"
+        },
+        "ACTION": {
+            "CREATEUSER": "创建用户",
+            "CANCEL": "取消",
+            "BACK": "返回",
+            "SAVE": "保存"
+        },
+        "USER2003": "该用户名已存在!"
+    },
+    "ROLE": {
+        "PROPERTIES": {
+            "id": "身份标识",
+            "name": "角色名称",
+            "description": "描述",
+            "createdate": "创建日期",
+            "status": "状态"
+        },
+        "LIST": {
+            "TITLE": "角色列表",
+            "HEADER": {
+                "ROLENAME": "角色名称",
+                "DESCRIPTION": "描述"
+            }
+        },
+        "DETAIL": {
+            "TITLE": "角色",
+            "ROLENAME": "角色名称",
+            "VALIDATE": "必须填写角色名称",
+            "DESCRIPTION": "描述",
+            "IMAGE": "图片",
+            "NOTIFICATION": "通知",
+            "STATUS": "状态",
+            "ACTION": {
+                "SAVE": "保存",
+                "CANCEL": "取消",
+                "BACK": "返回",
+                "CREATEROLE": "创建角色"
+            }
+        }
+    },
+    "PERMISSION": {
+        "TAB_Alert": "报警",
+        "TAB_Case": "案例",
+        "TAB_Configuration": "系统配置",
+        "TAB_Knowledge Search": "专家知识库",
+        "TAB_Dashboards": "图表",
+        "TAB_Emap": "热效率分析",
+        "ROLE_LIST": "角色列表",
+        "CODES": {
+            "UPDATE_SUCCESS": "您已经成功更新该权限信息."
+        },
+        "SUBHEADER_MENU": "菜单",
+        "SUBHEADER_ACTION": "操作",
+        "NO_VALID_PERMISSION": "您尚未获得任何操作权限，请联系管理员."
+    },
+    "EVIDENCE": {
+        "TITLE": "上传证明",
+        "POPUPTITLE": "证明",
+        "ADDED": "上传于",
+        "BY": "上传者:",
+        "ANALYSIS": "分析",
+        "CODES": {
+            "IMGTYPE_ERROR": "请上传图片格式文件",
+            "FILETYPE_ERROR": "请上传正确格式文件",
+            "FILESIZE_ERROR": "文件大小不得超过50M",
+            "EVIDENCE_UPLOAD_SUCCESS": "上传成功",
+            "EVIDENCE_UPLOAD_FAIL": "上传失败"
+        }
+    },
+    "UPLOAD": {
+        "TITLE": "上传文件",
+        "FILE": "文件",
+        "TAG": "标签",
+        "ADDFILE": "添加文件",
+        "TAG_PLACEHOLDER": "请为该文件添加标签作为关键字",
+        "TAG_SPLIT": "请用分号分隔多个标签",
+        "FILETYPE_HINT": "请选择bmp, jpg, jpeg, gif, doc, docx, xls, xlsx, ppt, pptx, zip, pdf, png, txt, csv, wps, rar, html, conf格式文件。",
+        "CODES": {
+            "FILETYPE_ERROR": "请上传正确格式文件",
+            "FILE_UPLOAD_SUCCESS": "上传成功",
+            "FILE_UPLOAD_FAIL": "上传失败"
+        },
+        "UPLOAD1001": "临时文件保存异常， 请重试或者联系管理员",
+        "UPLOAD1003": "文件保存异常， 请重试或者联系管理员"
+    },
+    "KPI": {
+        "PROPERTIES": {
+            "id": "标识",
+            "name": "KPI名称",
+            "description": "描述"
+        },
+        "LIST": {
+            "TITLE": "KPIs",
+            "HEADER": {
+                "KPINAME": "KPI名称",
+                "DESCRIPTION": "描述"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "您已经成功更新该KPI信息"
+        },
+        "DETAIL": {
+            "TITLE": "KPI",
+            "KPINAME": "KPI名称",
+            "DESCRIPTION": "描述",
+            "ACTION": {
+                "SAVE": "保存",
+                "CANCEL": "取消",
+                "BACK": "返回"
+            }
+        }
+    },
+    "MESSAGE": {
+        "PROPERTIES": {
+            "id": "标识",
+            "name": "信息名称",
+            "description": "描述"
+        },
+        "LIST": {
+            "TITLE": "信息管理",
+            "HEADER": {
+                "MESSAGENAME": "信息名称",
+                "DESCRIPTION": "描述",
+                "MENUNAME": "菜单名称",
+                "LINK": "链接"
+            },
+            "BASE_MESSAGE": "基本信息",
+            "CUSTOMIZE_MESSAGE": "自定义链接"
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "您已经成功更新该信息",
+            "MENU_UPDATE_SUCCESS": "您已经成功更新该自定义链接"
+        },
+        "DETAIL": {
+            "TITLE": "信息",
+            "MESSAGENAME": "信息名称",
+            "DESCRIPTION": "描述",
+            "STATUS": "可见性",
+            "ACTION": {
+                "SAVE": "保存",
+                "CANCEL": "取消",
+                "BACK": "返回"
+            },
+            "VALIDATION": {
+                "MENU_NAME_REQUIRED": "必须填写菜单名称",
+                "URL_REQUIRED": "必须填写链接地址",
+                "MENU_NAME_SAME": "菜单名称不能重复"
+            }
+        }
+    },
+    "TAG": {
+        "PROPERTIES": {
+            "id": "身份标识",
+            "generatorname": "系统内部标签名称",
+            "tagname": "标签名称",
+            "assetName": "Asset Name",
+            "status": "激活",
+            "tempvalue": "临时值",
+            "upperlimit": "上限",
+            "lowerlimit": "下限",
+            "unitofmeasurement": "计量单位"
+        },
+        "LIST": {
+            "TITLE": "标签列表",
+            "TAGNAMEFORSEARCH": "标签名称",
+            "HEADER": {
+                "GENERATORNAME": "系统内部标签名称",
+                "TAGNAME": "标签名称",
+                "ASSETNAME": "设备名称",
+                "STATUS": "激活",
+                "TEMPVALUE": "临时值",
+                "REALVALUE": "实时值",
+                "REFRESH_BTN": "刷新"
+            },
+            "DROPDOWNITEM": {
+                "GROUP": "--集团--",
+                "SITE": "--站点--",
+                "PLANT": "--电厂--",
+                "BLOCK": "--动力单元--",
+                "UNIT": "--机组--"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "您已经成功更新该标签信息.",
+            "FILTER_LESS": "请至少选择一个电厂.",
+            "NAMENOGOOD": "0,1,2,3,4是特殊的有效值,请勿使用."
+        },
+        "DETAIL": {
+            "TITLE": "标签",
+            "TAG_LIST_HEADER": "直接标签",
+            "TAG_LIST_HEADER2": "辅助标签",
+            "GENERATORNAME": "系统内部标签名称",
+            "TAGNAME": "标签名称",
+            "UNITOFMEASUREMENT": "计量单位",
+            "UPPERLIMIT": "上限",
+            "LOWERLIMIT": "下限",
+            "TEMPVALUE": "临时值",
+            "ACTION": {
+                "SAVE": "保存",
+                "CANCEL": "取消",
+                "BACK": "返回"
+            },
+            "FORM_INVALIDATE": {
+                "TAGNAME": "请输入标签名称",
+                "UNITOFMEASUREMENT": "请输入计量单位",
+                "UPPERLIMIT": "请输入上限",
+                "LOWERLIMIT": "请输入下限"
+            }
+        }
+    },
+    "IMPORTANDEXPORT": {
+        "CODES": {
+            "SITE_LESS": "请选择站点",
+            "EXCEL_LESS": "请选择表格文件",
+            "TAG_UPLOAD_SUCCESS": "标签文件上传成功",
+            "ASSET_UPLOAD_SUCCESS": "设备文件上传成功",
+            "MANDD_UPLOAD_SUCCESS": "M&D文件上传成功",
+            "TIMEOUT": "服务器请求超时"
+        },
+        "EXCEL1001": "文件格式错误",
+        "EXCEL1002": "该报警与所选站点不匹配",
+        "UPLOAD1001": "临时文件保存异常， 请重试或者联系管理员"
+    },
+    "ALERT": {
+        "LIST": {
+            "TITLE": "全部",
+            "HEADER": {
+                "ALERTNAME": "报警名称",
+                "STATUS": "状态",
+                "ALERTID": "报警编号",
+                "SITE": "站点",
+                "SEVERITY": "严重性",
+                "ALERTSOURCE": "来源",
+                "EVENTTIME": "案例时间",
+                "CREATOR": "责任人"
+            }
+        },
+        "TAB": {
+            "ALL": "全部",
+            "UNCLAIMED": "待处理",
+            "INPROCESS": "处理中",
+            "CLOSED": "已关闭",
+            "MYALERT": "我的报警",
+            "ACTION": {
+                "MOREINFO": "查看更多"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "您已经成功更新了这个报警.",
+            "CLAIM_FAIL": "您不是该报警的所有者，无法进行该操作. "
+        },
+        "DETAIL": {
+            "TITLE": "报警详情",
+            "ALERTINOR": "报警信息",
+            "ALERTBASIC": "基本信息",
+            "ALERTNAME": "报警名称",
+            "SEVERITY": "严重性",
+            "SOURCE": "来源",
+            "ALERTID": "报警编号",
+            "STATUS": "状态",
+            "OWNER": "责任人",
+            "SOURCEOWNER": "来源责任人",
+            "EVENTTIME": "案例时间",
+            "LASTUPDATE": "最后更新",
+            "GROUP": "集团",
+            "SITE": "站点",
+            "PLANT": "电厂",
+            "BLOCK": "动力单元",
+            "UNIT": "机组",
+            "ASSET": "设备",
+            "SOURCESTATUS": "来源状态",
+            "LINKOFCASE": "相关案例超链接",
+            "DATETIME": "日期时间",
+            "ID": "编号",
+            "CLOSURENOTE": "关闭注释",
+            "CATEGORY": "类型",
+            "COMMENT": "描述",
+            "ISSUECLASSIFICATION": "问题分类",
+            "NOTES": "注释",
+            "CLOSURE": {
+                "NOACTION": "无操作",
+                "SENSORREPAIR": "传感器维修",
+                "OPERATIONALCHANGE": "运行方式改变",
+                "SCHEDULEDMAINTENANCE": "计划检修",
+                "UNPLANNEDMAINTENANCE": "非计划检修",
+                "OTHERS": "其他"
+            },
+            "BUTTON": {
+                "SAVE": "保存并关闭",
+                "CANCEL": "取消"
+            },
+            "CREATECASEDETAIL": {
+                "TITLE": "创建案例",
+                "SEVERITY": "严重性",
+                "NAME": "名称",
+                "SYMPTOM": "征兆",
+                "BUTTON": {
+                    "CREATE": "创建",
+                    "CLOSE": "关闭"
+                }
+            },
+            "ACTIONTITLE": "操作",
+            "ACTION": {
+                "CLAIM": "认领",
+                "CLOSE": "关闭",
+                "CREATECASE": "创建案例",
+                "REOPEN": "重新处理"
+            }
+        },
+        "USER2004": "该用户没有电厂.",
+        "ANALYSIS": {
+            "NONETAG": "请选择标签.",
+            "DATERANGE": "开始时间必须早于或等于结束时间.",
+            "ANALYSISRESULT": "无分析结果"
+        },
+        "Error": {
+            "SYSTEM5003": "您尚不属于任何电厂，请联系管理员."
+        },
+        "STATUS": {
+            "UNCLAIMED": "待处理",
+            "INPROCESS": "处理中",
+            "CLOSED": "已关闭"
+        },
+        "ALERTSOURCE": {
+            "MD": "监测诊断",
+            "SMARTSIGNAL": "智慧信号"
+        }
+    },
+    "CASE": {
+        "LIST": {
+            "TITLE": "全部",
+            "HEADER": {
+                "CASENAME": "案例名称",
+                "SITE": "站点",
+                "STATUS": "状态",
+                "CASEID": "案例编号",
+                "SEVERITY": "严重性",
+                "CASESOURCE": "来源",
+                "CREATIONTIME": "创建时间",
+                "CREATOR": "创建者"
+            },
+            "CREATE_CASE": "创建案例"
+        },
+        "TAB": {
+            "ALL": "全部",
+            "UNCLAIMED": "待处理",
+            "INPROCESS": "重新处理中",
+            "CLOSED": "已关闭",
+            "MYCASE": "我的案例",
+            "ACTION": {
+                "MOREINFO": "查看更多"
+            }
+        },
+        "CODES": {
+            "CREATE_SUCCESS": "您已经成功为这个报警创建了案例.",
+            "UPDATE_SUCCESS": "您已经成功更新了这个案例."
+        },
+        "DETAIL": {
+            "TITLE": "案例详情",
+            "CASEINOR": "案例信息",
+            "ALERTBASIC": "基本信息",
+            "CASENAME": "案例名称",
+            "SEVERITY": "严重性",
+            "EXTERNALCASE": "外部案例",
+            "CASEID": "案例编号",
+            "STATUS": "状态",
+            "CREATOR": "创建者",
+            "CASESOURCE": "来源",
+            "CREATIONTIME": "创建时间",
+            "LASTUPDATE": "最后更新",
+            "GROUP": "集团",
+            "SITE": "站点",
+            "PLANT": "电厂",
+            "BLOCK": "动力单元",
+            "UNIT": "机组",
+            "ASSET": "设备",
+            "SOURCESTATUS": "来源状态",
+            "LINKOFALERT": "相关报警超链接",
+            "DATETIME": "日期时间",
+            "ID": "编号",
+            "CLOSURENOTE": "关闭注释",
+            "CATEGORY": "类型",
+            "COMMENT": "描述",
+            "CLOSURE": {
+                "NOACTION": "无操作",
+                "SENSORREPAIR": "传感器维修",
+                "OPERATIONALCHANGE": "运行方式改变",
+                "SCHEDULEDMAINTENANCE": "计划检修",
+                "UNPLANNEDMAINTENANCE": "非计划检修",
+                "OTHERS": "其他"
+            },
+            "ACTIONTITLE": "操作",
+            "ACTION": {
+                "CLOSE": "关闭",
+                "REOPEN": "重新处理"
+            },
+            "REPORT": {
+                "TITLE": "分析报告",
+                "SYMPTOM": "征兆",
+                "DIAGNOSIS": "诊断",
+                "RECOMMENDATION": "建议"
+            }
+        },
+        "USER2004": "该用户没有电厂。",
+        "STATUS": {
+            "OPENED": "待处理",
+            "REOPEN": "重新处理中",
+            "CLOSED": "已关闭"
+        },
+        "CASESOURCE": {
+            "MD": "监测诊断",
+            "SMARTSIGNAL": "智慧信号",
+            "GMOC": "GMOC"
+        }
+    },
+    "GROUP": {
+        "PROPERTIES": {
+            "id": "身份标识",
+            "name": "集团名称",
+            "code": "集团代码",
+            "description": "描述"
+        },
+        "LIST": {
+            "TITLE": "集团列表",
+            "HEADER": {
+                "NAME": "集团名称",
+                "CODE": "集团代码",
+                "DESCRIPTION": "描述"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "您已经成功更新该集团信息.",
+            "CREATE_SUCCESS": "您已经成功创建新集团."
+        },
+        "DETAIL": {
+            "TITLE": "集团",
+            "GROUPNAME": "集团名称",
+            "GROUPCODE": "集团代码",
+            "DESCRIPTION": "描述",
+            "ACTION": {
+                "SAVE": "保存",
+                "CANCEL": "取消",
+                "BACK": "返回",
+                "CREATEGROUP": "创建集团"
+            },
+            "FORM_INVALIDATE": {
+                "NAME": "请输入集团名称!",
+                "CODE": "请输入集团代码!"
+            }
+        }
+    },
+    "SITE": {
+        "PROPERTIES": {
+            "id": "身份标识",
+            "name": "站点名称",
+            "code": "站点代码",
+            "longitude": "经度",
+            "latitude": " 纬度",
+            "description": "描述"
+        },
+        "LIST": {
+            "TITLE": "站点列表",
+            "HEADER": {
+                "NAME": "站点名称",
+                "CODE": "站点代码",
+                "LONGITUDE": "经度",
+                "LATITUDE": "纬度",
+                "DESCRIPTION": "描述"
+            },
+            "SEARCH": {
+                "SEARCH": "查询",
+                "RESET": "重置",
+                "NULLNOTIFY": "请您选择筛选条件."
+            },
+            "DROPDOWNITEM": {
+                "GROUP": "--集团--"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "您已经成功更新该站点信息.",
+            "CREATE_SUCCESS": "您已经成功创建新站点."
+        },
+        "DETAIL": {
+            "TITLE": "站点",
+            "SITENAME": "站点名称",
+            "SITECODE": "站点代码",
+            "PARENTID": "集团",
+            "LONGITUDE": "经度",
+            "LATITUDE": "纬度",
+            "DESCRIPTION": "描述",
+            "ACTION": {
+                "SAVE": "保存",
+                "CANCEL": "取消",
+                "BACK": "返回",
+                "CREATESITE": "创建站点"
+            },
+            "FORM_INVALIDATE": {
+                "NAME": "请输入站点名称!",
+                "CODE": "请输入站点代码!",
+                "GROUP": "请选择集团!",
+                "LONGITUDE": "请输入经度!",
+                "LATITUDE": "请输入纬度!"
+            }
+        }
+    },
+    "PLANT": {
+        "PROPERTIES": {
+            "id": "身份标识",
+            "name": "电厂名称",
+            "code": "电厂代码",
+            "description": "描述"
+        },
+        "LIST": {
+            "TITLE": "电厂列表",
+            "HEADER": {
+                "NAME": "电厂名称",
+                "CODE": "电厂代码",
+                "SSID": "Smart Signal 标识",
+                "DESCRIPTION": "描述"
+            },
+            "SEARCH": {
+                "SEARCH": "查询",
+                "RESET": "重置",
+                "NULLNOTIFY": "请您选择筛选条件."
+            },
+            "DROPDOWNITEM": {
+                "GROUP": "--集团--",
+                "SITE": "--站点--"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "您已经成功更新该电厂信息.",
+            "CREATE_SUCCESS": "您已经成功创建新电厂."
+        },
+        "DETAIL": {
+            "TITLE": "电厂",
+            "PLANTNAME": "电厂名称",
+            "PLANTCODE": "电厂代码",
+            "GROUP": "集团",
+            "PARENTID": "站点",
+            "SSID": "Smart Signal 标识",
+            "DESCRIPTION": "描述",
+            "ACTION": {
+                "SAVE": "保存",
+                "CANCEL": "取消",
+                "BACK": "返回",
+                "CREATEPLANT": "创建电厂"
+            },
+            "FORM_INVALIDATE": {
+                "NAME": "请输入电厂名称!",
+                "CODE": "请输入电厂代码!",
+                "GROUP": "请选择集团!",
+                "SITE": "请选择站点!"
+            }
+        }
+    },
+    "BLOCK": {
+        "PROPERTIES": {
+            "id": "身份标识",
+            "name": "动力单元名称",
+            "code": "动力单元代码",
+            "description": "描述"
+        },
+        "LIST": {
+            "TITLE": "动力单元列表",
+            "HEADER": {
+                "NAME": "动力单元名称",
+                "CODE": "动力单元代码",
+                "ASSETTYPE": "动力单元类型",
+                "SSID": "Smart Signal 标识",
+                "ASSETPATH": "设备路径",
+                "DESCRIPTION": "描述"
+            },
+            "SEARCH": {
+                "SEARCH": "查询",
+                "RESET": "重置",
+                "NULLNOTIFY": "请您选择筛选条件."
+            },
+            "DROPDOWNITEM": {
+                "GROUP": "--集团--",
+                "SITE": "--站点--",
+                "PLANT": "--电厂--",
+                "BLOCKTYPE": "--动力单元类型--"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "您已经成功更新该动力单元信息.",
+            "CREATE_SUCCESS": "您已经成功创建新动力单元."
+        },
+        "DETAIL": {
+            "TITLE": "动力单元",
+            "BLOCKNAME": "动力单元名称",
+            "BLOCKCODE": "动力单元代码",
+            "BLOCKTYPE": "动力单元类型",
+            "SSID": "Smart Signal 标识",
+            "ASSETPATH": "设备路径",
+            "GROUP": "集团",
+            "SITE": "站点",
+            "PARENTID": "电厂",
+            "DESCRIPTION": "描述",
+            "ACTION": {
+                "SAVE": "保存",
+                "CANCEL": "取消",
+                "BACK": "返回",
+                "CREATEBLOCK": "创建动力单元"
+            },
+            "FORM_INVALIDATE": {
+                "NAME": "请输入动力单元名称!",
+                "CODE": "请输入动力单元代码!",
+                "GROUP": "请选择集团!",
+                "SITE": "请选择站点!",
+                "PLANT": "请选择电厂!",
+                "ASSETTYPE": "请输入动力单元类型!"
+            }
+        }
+    },
+    "UNIT": {
+        "PROPERTIES": {
+            "id": "身份标识",
+            "name": "机组名称",
+            "code": "机组代码",
+            "description": "描述"
+        },
+        "LIST": {
+            "TITLE": "机组列表",
+            "HEADER": {
+                "NAME": "机组名称",
+                "CODE": "机组代码",
+                "ASSETPATH": "设备路径",
+                "SSID": "Smart Signal 标识",
+                "DESCRIPTION": "描述"
+            },
+            "SEARCH": {
+                "SEARCH": "查询",
+                "RESET": "重置",
+                "NULLNOTIFY": "请您选择筛选条件."
+            },
+            "DROPDOWNITEM": {
+                "GROUP": "--集团--",
+                "SITE": "--站点--",
+                "PLANT": "--电厂--",
+                "BLOCK": "--动力单元--"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "您已经成功更新该机组信息.",
+            "CREATE_SUCCESS": "您已经成功创建新机组."
+        },
+        "DETAIL": {
+            "TITLE": "机组",
+            "UNITNAME": "机组名称",
+            "UNITCODE": "机组代码",
+            "SSID": "Smart Signal 标识",
+            "ASSETPATH": "设备路径",
+            "GROUP": "集团",
+            "SITE": "站点",
+            "PLANT": "电厂",
+            "PARENTID": "动力单元",
+            "DESCRIPTION": "描述",
+            "ACTION": {
+                "SAVE": "保存",
+                "CANCEL": "取消",
+                "BACK": "返回",
+                "CREATEUNIT": "创建机组"
+            },
+            "FORM_INVALIDATE": {
+                "NAME": "请输入机组名称!",
+                "CODE": "请输入机组代码!",
+                "GROUP": "请选择集团!",
+                "SITE": "请选择站点!",
+                "PLANT": "请选择电厂!",
+                "BLOCK": "请选择动力单元!"
+            }
+        }
+    },
+    "ASSET": {
+        "DASHBOARD1001": "该图表没有配置KPI，请联系管理员.",
+        "PROPERTIES": {
+            "id": "身份标识",
+            "name": "设备名称",
+            "code": "设备代码",
+            "description": "描述"
+        },
+        "LIST": {
+            "TITLE": "设备列表",
+            "HEADER": {
+                "NAME": "设备名称",
+                "CODE": "设备代码",
+                "ASSETPATH": "设备路径",
+                "SSID": "Smart Signal 标识",
+                "DESCRIPTION": "描述"
+            },
+            "SEARCH": {
+                "SEARCH": "查询",
+                "RESET": "重置",
+                "NULLNOTIFY": "请您选择筛选条件."
+            },
+            "DROPDOWNITEM": {
+                "GROUP": "--集团--",
+                "SITE": "--站点--",
+                "PLANT": "--电厂--",
+                "BLOCK": "--动力单元--",
+                "UNIT": "--机组--"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "您已经成功更新该设备信息.",
+            "CREATE_SUCCESS": "您已经成功创建新设备."
+        },
+        "DETAIL": {
+            "TITLE": "设备",
+            "ASSETNAME": "设备名称",
+            "ASSETCODE": "设备代码",
+            "GROUP": "集团",
+            "SITE": "站点",
+            "PLANT": "电厂",
+            "BLOCK": "动力单元",
+            "PARENTID": "机组",
+            "SSID": "Smart Signal 标识",
+            "ASSETPATH": "设备路径",
+            "DESCRIPTION": "描述",
+            "ACTION": {
+                "SAVE": "保存",
+                "CANCEL": "取消",
+                "BACK": "返回",
+                "CREATEASSET": "创建设备"
+            },
+            "FORM_INVALIDATE": {
+                "NAME": "请输入设备名称!",
+                "CODE": "请输入设备代码!",
+                "GROUP": "请选择集团!",
+                "SITE": "请选择站点!",
+                "PLANT": "请选择电厂!",
+                "BLOCK": "请选择动力单元!",
+                "UNIT": "请选择机组!"
+            }
+        }
+    },
+    "IMPORT": {
+        "LIST": {
+            "TAGIMPORT": "标签导入",
+            "TAGEXPORT": "标签导出",
+            "ASSETIMPORT": "设备导入",
+            "ASSETEXPORT": "设备导出",
+            "MANDDIMPORT": "M&D导入",
+            "MANDDEXPORT": "M&D导出",
+            "SCREENIMPORT": "大屏导入",
+            "SCREENEXPORT": "大屏导出",
+            "TITLE": "导入和导出",
+            "CATEGORY": "类别",
+            "IMPORT": "导入",
+            "EXPORT": "导出",
+            "TAG": "标签",
+            "ASSET": "设备",
+            "ACTION": {
+                "ADD_FILE": "添加文件",
+                "IMPORT": "导入",
+                "EXPORT": "导出"
+            }
+        }
+    },
+    "SYSTEM_ERROR": "系统错误，请联系管理员。",
+    "ROLE_EDIT": "您已经成功更新该角色信息",
+    "ROLE_CREATE": "您已成功创建角色",
+    "COMMON": {
+        "SAVE_BTN": "保存",
+        "BACK_BTN": "返回",
+        "Cancel": "取消",
+        "Edit": "编辑",
+        "Edit_SAVE": "编辑并保存",
+        "RESET": "重置",
+        "Go": "跳转",
+        "OK": "确认",
+        "SEARCH": "搜索",
+        "CLOSE": "关闭",
+        "DETAIL": "查看详情",
+        "CLEAR_BTN": "清除",
+        "ALL_LABEL": "全选",
+        "NONE_LABEL": "全不选",
+        "TAB": "页面",
+        "SUBSET": "子集合",
+        "REALTIMEVALUE": "实时值",
+        "ON": "开",
+        "OFF": "关",
+        "TOTAL": "总数",
+        "DROPDOWN_DEFAULT": {
+            "GROUP": "--集团--",
+            "SITE": "--站点--",
+            "PLANT": "--电厂--",
+            "BLOCK": "--动力单元--",
+            "UNIT": "--机组--"
+        },
+        "LABEL": {
+            "KPI": "指标",
+            "THRESHOLD": "阀值",
+            "RED": "红",
+            "YELLOW": "黄",
+            "GREEN": "绿"
+        },
+        "NOTIFICATION": {
+            "NO_PLANTS": "您尚不属于任何电厂，请联系管理员."
+        }
+    },
+    "LOG": {
+        "TITLE": "日志",
+        "ACTION": {
+            "UPDATE": "更新",
+            "CREATE": "创建",
+            "CLOSE": "关闭",
+            "NOTE": "注释",
+            "EVIDENCE": "证明"
+        },
+        "MESSAGE": {
+            "ALERT_CREATE_CASE": "为该报警创建了案例.",
+            "ALERT_REOPEN": "重新处理了该报警.",
+            "ALERT_CLOSE": "创建了关闭注释并且关闭了该报警.",
+            "ALERT_NOTE": "为该报警创建了注释.",
+            "ALERT_EVIDENCE": "为该报警上传了证明文件.",
+            "ALERT_CLAIM": "认领了该报警.",
+            "CASE_CREATE_CASE": "创建了案例.",
+            "CASE_CLOSE": "为该案例创建了关闭注释并且关闭了该案例.",
+            "CASE_NOTE": "为该案例创建了注释.",
+            "CASE_EVIDENCE": "为该案例上传了证明文件.",
+            "CASE_REPORT": "为该案例更新了分析报告.",
+            "UPDATE_INFORMATION": "为该案例更新了案例信息."
+        }
+    },
+    "NOTE": {
+        "SEND": "发送",
+        "NOTE": "注释",
+        "TYPEMESSAGE": "输入消息"
+    },
+    "CREATE": {
+        "CASE_SUCCESS": "您已经成功为这个报警创建了案例."
+    },
+    "CREATE_CASE": {
+        "TITLE": "创建案例",
+        "SEVERITY": "严重性",
+        "CASENAME": "名称",
+        "SYMPOTOMS": "征兆",
+        "SITE": "站点",
+        "PLANT": "电厂",
+        "ACTION": {
+            "CLOSE": "关闭",
+            "CREATE": "创建案例"
+        },
+        "FORM_INVALIDATE": {
+            "CASENAME": "请输入案例名称!",
+            "SEVERITY": "请选择性!",
+            "SITE": "请选择站点!",
+            "PLANT": "请选择电厂!",
+            "SYMPOTOMS": "请输入征兆!"
+        }
+    },
+    "MORE_FILTER": {
+        "Title": "更多筛选",
+        "Asset Name:": "设备名称:",
+        "Owner/User Name:": "责任人/用户姓名:",
+        "Severity:": "严重性:",
+        "Source:": "来源:",
+        "Alert Name:": "报警名称:",
+        "Case Name:": "案例名称:",
+        "Event Time:": "案例时间:",
+        "Creation Time:": "案例发生时间:",
+        "Plant:": "电厂:",
+        "Block:": "动力单元:",
+        "Unit:": "机组:",
+        "Apply": "应用",
+        "Filter Name": "筛选名称:",
+        "New Filter": "创建筛选",
+        "contains": "包含",
+        "is equal to": "等于( = )",
+        "is not equal to": "不等于",
+        "is greater than": "大于( > )",
+        "is greater than or equal to": "大于等于( >= )",
+        "is less than": "小于( < )",
+        "is less than or equal to": "小于等于( <= )",
+        "Last 24 Hours": "过去24小时",
+        "Last 7 Days": "过去7天",
+        "Last 30 Days": "过去30天",
+        "Last 3 Months": "过去3个月",
+        "Last 6 Months": "过去6个月",
+        "Last 12 Months": "过去12个月",
+        "Custom Range": "自定义范围",
+        "LIST_TITLE": "我的筛选",
+        "CONDITIONS": "条件",
+        "CLEAR_FILTER_BTN": "清除筛选",
+        "severity1": 1,
+        "severity2": 2,
+        "severity3": 3,
+        "severity4": 4,
+        "severity5": 5,
+        "md": "监测诊断",
+        "ss": "智慧信号",
+        "NOTIFICATION": {
+            "SAME_NAME_CREATE": "筛选名称已存在",
+            "SAME_NAME_EDIT": "筛选名称已存在",
+            "UPDATE_SUCCESS": "您已经成功更新该筛选信息",
+            "CREATE_SUCCESS": "您已经成功创建新筛选",
+            "CLEAR_TIMEOUT": "清除筛选条件超时"
+        }
+    },
+    "KNOWLEDGE": {
+        "KNOWLEDGE_SEARCH": "专家知识库",
+        "SEARCH_TIP": "进行模糊搜索时，请在关键字后加*; 请用空格分隔多个标签或关键字.",
+        "HOT_SEARCH_TERMS": "热词搜索",
+        "SEARCH_PLACEHOLDER": "搜索...",
+        "CASENAME": "案例名称",
+        "OWNERNAME": "创建人",
+        "BLOCKNAME": "动力单元名称",
+        "UNITNAME": "机组名称",
+        "CREATIONTIME": "创建时间",
+        "STATUSNAME": "状态",
+        "PLANTNAME": "电厂名称"
+    },
+    "FILTER_GROUP": {
+        "TIMEINTERVAL": "--时间区间--",
+        "THREEDAYS": "三天",
+        "TWOWEEKS": "两周",
+        "ONEMONTH": "一个月",
+        "CUSTOMIZED": "自定义",
+        "CASCADING_LESS": "请您选择筛选条件.",
+        "DATE_LESS": "请为该图表选择时间区间.",
+        "DATE_WRONG": "查看失败,开始时间必须早于或等于结束时间.",
+        "ACTIVEON": "开启实时值"
+    },
+    "ASSETSTATUS": {
+        "PLANT": "电厂",
+        "BLOCK": "动力单元",
+        "ASSETSTATUS": "设备状态",
+        "MAINSTEAMPRESSURE": "汽机主蒸汽压力",
+        "MAINSTEAMTEMPERATURE": "汽机主蒸汽温度",
+        "STEFFICIENCY": "汽轮机热效率",
+        "CONDENSEREFFICIENCY": "凝汽器热效率",
+        "COOLING": "冷却塔热效率",
+        "GTEFFICIENCY": "燃机热效率",
+        "HRSGEFFICIENCY": "余热锅炉热效率",
+        "GTSPEED": "燃机转速",
+        "STSPEED": "汽机转速",
+        "POWERGRIDFREQUENCY": "电网频率",
+        "AUXPOWERRATE": "厂用电率",
+        "OUTPUT": "实际功率",
+        "STLOAD": "汽机负荷",
+        "GASTURBINE": "燃气轮机",
+        "HRSG": "余热锅炉",
+        "STEAMTURBINE": "蒸汽轮机",
+        "CONDENSER": "凝汽器",
+        "COOLINGTOWER": "冷却塔",
+        "RED": "红",
+        "YELLOW": "黄",
+        "GREEN": "绿",
+        "SEARCH": "查看",
+        "SAVE": "保存",
+        "CLOSE": "关闭"
+    },
+    "OPERATION": {
+        "OPERATIONCOUNT": "运行里程"
+    },
+    "CUSTOMIZEDKPI": {
+        "CUSTOMIZEDKPI": "指标聚焦",
+        "SELECTKPI": "选择KPI",
+        "MORESELECT": "最多选8个KPI",
+        "SAVE": "保存",
+        "CLOSE": "关闭",
+        "DASHBOARD1001": "该图表没有配置KPI，请联系管理员.",
+        "MOST_EIGHT_KPI": "最多选8个KPI"
+    },
+    "CONFIGURATION": {
+        "DASHBOARD": {
+            "COMMON": {
+                "MOST_FOUR_KPI": "最多选4个KPI",
+                "MOST_THREE_KPI": "最多选3个KPI",
+                "MOST_ONE_KPI": "最多选1个KPI",
+                "MOST_4_KPI": "最多选4个KPI",
+                "MOST_3_KPI": "最多选3个KPI",
+                "MOST_1_KPI": "最多选1个KPI",
+                "MUST_ONE_KPI": "必须选1个KPI"
+            },
+            "MYFLEET": {
+                "TITLE": {
+                    "HOME": "全球对标",
+                    "TAG": "标签",
+                    "MAP": "数字地图"
+                },
+                "P1": "坐标一",
+                "P2": "坐标二",
+                "P3": "坐标三",
+                "P4": "坐标四",
+                "P5": "坐标五",
+                "HTTP": {
+                    "CREATE_SUCCESS": "成功配置全球对标"
+                },
+                "BTN": {
+                    "CHECK_TAGS": "查看标签"
+                }
+            },
+            "PLANT_MAP": {
+                "TITLE": {
+                    "HOME": "数字地图"
+                },
+                "HTTP": {
+                    "CREATE_SUCCESS": "成功配置数字地图"
+                },
+                "NOTIFICATION": {
+                    "CONFIG_PLANT_MAP_ALARM": "请配置仪表盘"
+                }
+            },
+            "ASSET_STATUS": {
+                "TITLE": {
+                    "HOME": "设备状态",
+                    "TAG": "标签",
+                    "HEADERS": {
+                        "GasTurbine": "燃机",
+                        "HRSG": "余热锅炉",
+                        "SteamTurbine": "汽机",
+                        "Condenser": "凝汽器",
+                        "CoolingTower": "冷却塔"
+                    },
+                    "GasTurbine11": "燃机一拖一",
+                    "GasTurbine21": "燃机二拖一",
+                    "CoalFiredUnit": "燃煤机组"
+                },
+                "HTTP": {
+                    "CREATE_SUCCESS": "成功配置设备状态"
+                }
+            },
+            "FIXED_KPI": {
+                "TITLE": {
+                    "HOME": "指标集合",
+                    "S1C1": "子集合1 - 图1",
+                    "S1C2": "子集合1 - 图2",
+                    "S2C1": "子集合2 - 图1",
+                    "S2C2": "子集合2 - 图2",
+                    "S3C1": "子集合3 - 图1",
+                    "S3C2": "子集合3 - 图2"
+                },
+                "HTTP": {
+                    "CREATE_SUCCESS": "成功配置指标集合"
+                }
+            },
+            "OPERATION_COUNT": {
+                "TITLE": {
+                    "HOME": "运行里程",
+                    "INSTRUMENT": "仪表盘",
+                    "KPI": "指标"
+                },
+                "HTTP": {
+                    "CREATE_SUCCESS": "成功配置运行里程"
+                },
+                "NOTIFICATION": {
+                    "CONFIG_INSTRUMENT_ALARM": "请配置仪表盘"
+                }
+            },
+            "KPIS": {
+                "Output(Actual)": "实际功率",
+                "Corrected Full Load Output": "ISO工况基本负荷",
+                "Actual Capacity MW": "基本负荷",
+                "Actual Heat Rate": "度电热耗（实时值）",
+                "Corrected Full Load Heat Rate": "度电热耗（满负荷值）",
+                "Start Fuel": "启机燃料消耗（点火到并网）",
+                "Starting Reliability": "启动可靠性",
+                "Start Time": "启机时间（点火到并网）",
+                "Output trend-Last Start Up": "启机曲线-功率",
+                "Speed trend-Last Start Up": "启机曲线-转速",
+                "NOx": "NOx",
+                "CO": "CO",
+                "SO₂": "SO₂",
+                "Main Steam Pressure": "汽机主蒸汽压力",
+                "Main Steam Temperature": "汽机主蒸汽温度",
+                "GT Speed": "燃机转速",
+                "Aux. Power Rate": "厂用电率",
+                "Power Grid Frequency": "电网频率",
+                "ST Speed": "汽机转速",
+                "GT Efficiency Degradation": "燃机热效率偏差",
+                "HRSG Efficiency Degradation": "余热锅炉热效率偏差",
+                "ST Efficiency Degradation": "汽轮机热效率偏差",
+                "Condenser Efficiency Degradation": "凝汽器热效率偏差",
+                "Cooling Tower Efficiency Degradation": "冷却塔热效率偏差",
+                "GT Efficiency": "燃机热效率",
+                "HRSG Efficiency": "余热锅炉热效率",
+                "ST Efficiency": "汽轮机热效率",
+                "Condenser Efficiency": "凝汽器热效率",
+                "Cooling Tower Efficiency": "冷却塔热效率",
+                "Trips": "跳机次数",
+                "Factored Startup": "折合启动次数",
+                "Fired Hours": "运行小时数",
+                "Factored Fired Hours": "折合燃机运行小时数",
+                "Remaining Operation Hours": "剩余运行小时数",
+                "Daily Fuel Gas Consumption": "天然气累计量（当日）",
+                "MWH (Day)": "累计发电量（当日）",
+                "Fuel Gas Flow (Month)": "当前燃气使用量（当月）",
+                "Total MWH (Month)": "累计发电量（当月）",
+                "Fired Startup": "点火启动次数",
+                "Remaining Startup": "剩余启动次数（距离小修）",
+                "Unit Load": "机组负荷",
+                "GT Load": "燃机负荷",
+                "ST Load": "汽机负荷",
+                "Pump Eff": "泵效率",
+                "Fan Eff": "风机效率",
+                "Aux Boiler Eff": "启动锅炉效率",
+                "FWH Eff": "给水加热器效率",
+                "Air Heater Eff": "空气加热器效率",
+                "Compressor Eff": "压气机效率"
+            },
+            "StartingReliability": {
+                "Starting Reliability": "启动成功率"
+            },
+            "NOTIFY": {
+                "MYFLEET_VALIDATE": "请输入有效数据"
+            },
+            "TITLE": {
+                "MAPTITLE": "数字地图",
+                "CASEALERT": "报警统计"
+            }
+        }
+    },
+    "DASHBOARD": {
+        "CASEALERT": {
+            "ALERTTOTAL": "报警总数",
+            "ALERTPLANT": "报警数量按照不同电厂统计",
+            "ALERTASSET": "报警数量按照不同设备统计",
+            "ALERTSOURCE": "报警数量按照不同来源统计",
+            "CASETOTAL": "案例总数",
+            "CASEPLANT": "案例数量按照不同电厂统计",
+            "CASEASSET": "案例数量按照不同设备统计",
+            "CASESOURCE": "案例数量按照不同来源统计 ",
+            "PLANTSELECT": "--电厂--",
+            "ERRORMESSAGE": {
+                "NONEPLANTSELECTD": "请为该图表选择电厂."
+            },
+            "TITLE": {
+                "CASE": "案例",
+                "ALERT": "报警"
+            }
+        },
+        "MYFLEET": {
+            "TITLE": "全球对标",
+            "NONEKPISETTINGED": "该子集合没有配置KPI，请联系管理员."
+        },
+        "FIXEDKPI": {
+            "TITLE": "指标集合"
+        },
+        "MAP": {
+            "ERRORMESSAGE": {
+                "NONEKPISETTINGED": "该图表没有配置KPI，请联系管理员."
+            },
+            "USER2004": "您尚不属于任何电厂，请联系管理员."
+        }
+    }
+}

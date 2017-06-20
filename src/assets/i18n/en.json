@@ -1,0 +1,1304 @@
+{
+    "HOME": {
+        "TITLE": "Hello Angular 2 with ngx-translate!",
+        "SELECT": "Language"
+    },
+    "theme-blue-dark": "Light",
+    "theme-black-dark": "Dark",
+    "LOCALIZE": {
+        "SELECT": "Language"
+    },
+    "LOGO": {
+        "GMOC": "GMOC"
+    },
+    "LOGIN": {
+        "TITLE": "Beijing International Electric Power Data Monitoring Center",
+        "FORM_COMPOSITION": {
+            "USERNAME": "User Name",
+            "PASSWORD": "Password",
+            "REGISTER": "Register",
+            "FORGETPASSWORD": "Forgot Password",
+            "LOGIN": "Login"
+        },
+        "FORM_INVALIDATE": {
+            "USERNAME_REQUIRED": "Please insert your User Name!",
+            "PASSWORD_REQUIRED": "Please insert your Password!"
+        },
+        "USER2002": "Login failed, the user name or password is not correct.",
+        "USER2005": "Login failed, the user is inactivated, please contact the administrator."
+    },
+    "HEADER": {
+        "SIGNOUT": "Sign Out"
+    },
+    "SIDEBAR": {
+        "THEME": "Theme",
+        "THEME-BLUE-DARK": "Light",
+        "THEME-BLACK-DARK": "Dark",
+        "MENU": {
+            "Alert": "Alert",
+            "Case": "Case",
+            "Knowledge Search": "Knowledge Search",
+            "Dashboards": "Dashboards",
+            "Configuration": "Configuration",
+            "Emap": "Emap",
+            "All": "All",
+            "More Filters": "More Filters",
+            "Open": "Open",
+            "In-process": "Configuration",
+            "Close": "Emap",
+            "My Cases": "Emap",
+            "Power Plant Map": "Power Plant Map",
+            "My fleet": "My fleet",
+            "Fixed KPI": "Fixed KPI",
+            "Customized KPI": "Customized KPI",
+            "Case/Alert": "Case/Alert",
+            "Asset Status": "Asset Status",
+            "Operation Count": "Configuration",
+            "User Management": "User Management",
+            "Role Management": "Role Management",
+            "Permission Management": "Permission Management",
+            "Message Management": "Message Management",
+            "KPI Management": "KPI Management",
+            "Import/Export Management": "Import/Export Management",
+            "Asset Management": "Asset Management",
+            "Site": "Site",
+            "Plant": "Plant",
+            "Block": "Block",
+            "Unit": "Unit",
+            "Asset": "Asset",
+            "Tag": "Tag"
+        }
+    },
+    "USER": {
+        "PROPERTIES": {
+            "id": "id",
+            "loginname": "Login Name",
+            "realname": "Real Name",
+            "office": "Office",
+            "title": "Title",
+            "tel": "Tel",
+            "mobile": "Mobile",
+            "email": "Email",
+            "company": "Company",
+            "STATUS": "Status",
+            "activation": "Activated",
+            "deactivation": "Inactivated"
+        },
+        "LIST": {
+            "TITLE": "User List",
+            "HEADER": {
+                "USERNAME": "Real Name",
+                "COMPANY": "Company",
+                "EMAIL": "Email",
+                "LOGINNAME": "User Name",
+                "OFFICE": "Office",
+                "TITLE": "Title",
+                "PLANT": "Plant",
+                "ROLE": "Role"
+            },
+            "PLANT_DEFAULT": "---Plant---",
+            "ROLE_DEFAULT": "---Role---"
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "The user was updated successfully.",
+            "CREATE_SUCCESS": "The user was created successfully."
+        },
+        "DETAIL": {
+            "TITLE": "User Detail",
+            "LOGINNAME": "User Name",
+            "REALNAME": "Real Name",
+            "OFFICE": "Office",
+            "TEL": "Tel",
+            "MOBILE": "Mobile",
+            "EMAIL": "Email",
+            "COMPANY": "Company",
+            "IMAGE_INVALIDATE": {
+                "ERROR": "The file type does not match!",
+                "SUCCESS": "Upload image successfully!"
+            }
+        },
+        "CREATION": {
+            "ROLE_LIST": "Role List",
+            "PLANT_LIST": "Plant List",
+            "PROFILE": "Profile",
+            "Real Name": "Real Name",
+            "Title": "Title",
+            "Email": "Email",
+            "Username": "User Name",
+            "Password": "Password",
+            "Phone": "Phone",
+            "Mobile": "Mobile",
+            "Office": "Office",
+            "Photo": "Photo",
+            "Add File": "Add File",
+            "ROLE_LIST_HEADER": "Role List",
+            "PLANT_LIST_HEADER": "Plant List"
+        },
+        "FORM_INVALIDATE": {
+            "REAL_NAME_REQUIRED": "Real name is required!",
+            "TITLE_REQUIRED": "Title is required!",
+            "EMAIL_REQUIRED": "Valid Email is required!",
+            "LOGIN_NAME_REQUIRED": "User name is required!",
+            "PWD_REQUIRED": "Password is required!",
+            "PHONE_REQUIRED": "Tel is required!",
+            "MOBILE_REQUIRED": "Mobile is required!",
+            "OFFICE_REQUIRED": "Office is required!"
+        },
+        "ACTION": {
+            "CREATEUSER": "Create User",
+            "CANCEL": "Cancel",
+            "BACK": "Back",
+            "SAVE": "Save"
+        },
+        "USER2003": "The User Name is already exist!"
+    },
+    "ROLE": {
+        "PROPERTIES": {
+            "id": "id",
+            "name": "Role Name",
+            "description": "Description",
+            "createdate": "Create date",
+            "status": "Status"
+        },
+        "LIST": {
+            "TITLE": "Role List",
+            "HEADER": {
+                "ROLENAME": "Role Name",
+                "DESCRIPTION": "Description"
+            }
+        },
+        "DETAIL": {
+            "TITLE": "Role",
+            "ROLENAME": "Role Name",
+            "VALIDATE": "Role name is required",
+            "DESCRIPTION": "Description",
+            "IMAGE": "Image",
+            "NOTIFICATION": "Notification",
+            "STATUS": "Status",
+            "ACTION": {
+                "SAVE": "Save",
+                "CANCEL": "Cancel",
+                "BACK": "Back",
+                "CREATEROLE": "Create Role"
+            }
+        }
+    },
+    "PERMISSION": {
+        "TAB_Alert": "Alert",
+        "TAB_Case": "Case",
+        "TAB_Configuration": "Configuration",
+        "TAB_Knowledge Search": "Knowledge Search",
+        "TAB_Dashboards": "Dashboards",
+        "TAB_Emap": "Emap",
+        "ROLE_LIST": "Role List",
+        "CODES": {
+            "UPDATE_SUCCESS": "The permission was updated successfully."
+        },
+        "SUBHEADER_MENU": "MenuName",
+        "SUBHEADER_ACTION": "Actions",
+        "NO_VALID_PERMISSION": "You don't have any permission, please contact the administrator."
+    },
+    "EVIDENCE": {
+        "TITLE": "Upload Evidence",
+        "POPUPTITLE": "Evidence",
+        "ADDED": "Added",
+        "BY": "By",
+        "ANALYSIS": "Analysis",
+        "CODES": {
+            "IMGTYPE_ERROR": "Please upload image format file.",
+            "FILETYPE_ERROR": "Please upload correct format file.",
+            "FILESIZE_ERROR": "The limitation of file size is 50M.",
+            "EVIDENCE_UPLOAD_SUCCESS": "Upload Success",
+            "EVIDENCE_UPLOAD_FAIL": "Upload Fail"
+        }
+    },
+    "UPLOAD": {
+        "TITLE": "Upload File",
+        "FILE": "File",
+        "TAG": "Tags",
+        "ADDFILE": "Add File",
+        "TAG_PLACEHOLDER": "Please add tag for this file as keyword",
+        "TAG_SPLIT": "Please use semicolon to separate mutiple tags.",
+        "FILETYPE_HINT": "Please select a bmp, jpg, jpeg, gif, doc, docx, xls, xlsx, ppt, pptx, zip, pdf, png, txt, csv, wps, rar, html, conf format file.",
+        "CODES": {
+            "FILETYPE_ERROR": "Please upload correct format file.",
+            "FILE_UPLOAD_SUCCESS": "Upload Success",
+            "FILE_UPLOAD_FAIL": "Upload File"
+        },
+        "UPLOAD1001": "Temporary file is unusual, please try again or contact your administrator",
+        "UPLOAD1003": "File is unusual, please try again or contact your administrator"
+    },
+    "KPI": {
+        "PROPERTIES": {
+            "id": "id",
+            "name": "KPI Name",
+            "description": "Description"
+        },
+        "LIST": {
+            "TITLE": "KPIs",
+            "HEADER": {
+                "KPINAME": "KPI Name",
+                "DESCRIPTION": "Description"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "The KPI was updated successfully."
+        },
+        "DETAIL": {
+            "TITLE": "KPI",
+            "KPINAME": "KPI Name",
+            "DESCRIPTION": "Description",
+            "ACTION": {
+                "SAVE": "Save",
+                "CANCEL": "Cancel",
+                "BACK": "Back"
+            }
+        }
+    },
+    "MESSAGE": {
+        "PROPERTIES": {
+            "id": "id",
+            "name": "Message Name",
+            "description": "Description"
+        },
+        "LIST": {
+            "TITLE": "Message Management",
+            "HEADER": {
+                "MESSAGENAME": "Message Name",
+                "DESCRIPTION": "Description",
+                "MENUNAME": "Menu Name",
+                "LINK": "URL"
+            },
+            "BASE_MESSAGE": "Base Message",
+            "CUSTOMIZE_MESSAGE": "Customized Link"
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "The message was updated successfully.",
+            "MENU_UPDATE_SUCCESS": "The customized link was updated successfully."
+        },
+        "DETAIL": {
+            "TITLE": "Message",
+            "MESSAGENAME": "Message Name",
+            "DESCRIPTION": "Description",
+            "STATUS": "Visibility",
+            "ACTION": {
+                "SAVE": "Save",
+                "CANCEL": "Cancel",
+                "BACK": "Back"
+            },
+            "VALIDATION": {
+                "MENU_NAME_REQUIRED": "Menu name is required",
+                "URL_REQUIRED": "URL is required",
+                "MENU_NAME_SAME": "Same menu name is not allowed"
+            }
+        }
+    },
+    "TAG": {
+        "PROPERTIES": {
+            "id": "id",
+            "generatorname": "CaseMgmt TagNM",
+            "tagname": "Tag Name",
+            "assetName": "Asset Name",
+            "status": "Status",
+            "tempvalue": "Tempvalue",
+            "upperlimit": "Upperlimit",
+            "lowerlimit": "Lowerlimit",
+            "unitofmeasurement": "Unit Of Measurement"
+        },
+        "LIST": {
+            "TITLE": "Tag",
+            "TAGNAMEFORSEARCH": "Tag Name",
+            "HEADER": {
+                "GENERATORNAME": "CaseMgmt TagNM",
+                "TAGNAME": "Tag Name",
+                "ASSETNAME": "Asset Name",
+                "STATUS": "Activation",
+                "TEMPVALUE": "Tempvalue",
+                "REALVALUE": "Real Time",
+                "REFRESH_BTN": "Refresh"
+            },
+            "DROPDOWNITEM": {
+                "GROUP": "--Group--",
+                "SITE": "--Site--",
+                "PLANT": "--Plant--",
+                "BLOCK": "--Block--",
+                "UNIT": "--Unit--"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "The tag was updated successfully.",
+            "FILTER_LESS": "Please select at least one plant.",
+            "NAMENOGOOD": "0,1,2,3,4 is a special valid value.Please don't use it."
+        },
+        "DETAIL": {
+            "TITLE": "Tag",
+            "TAG_LIST_HEADER": "Contributing Tags",
+            "TAG_LIST_HEADER2": "Participating Tags",
+            "GENERATORNAME": "CaseMgmt TagNM",
+            "TAGNAME": "Tag Name",
+            "UNITOFMEASUREMENT": "Unit Of Measurement",
+            "UPPERLIMIT": "Upperlimit",
+            "LOWERLIMIT": "Lowerlimit",
+            "TEMPVALUE": "Tempvalue",
+            "ACTION": {
+                "SAVE": "Save",
+                "CANCEL": "Cancel",
+                "BACK": "Back"
+            },
+            "FORM_INVALIDATE": {
+                "TAGNAME": "Tag Name is required!",
+                "UNITOFMEASUREMENT": "Unit Of Measurement is required!",
+                "UPPERLIMIT": "Upperlimit is required!",
+                "LOWERLIMIT": "Lowerlimit is required!"
+            }
+        }
+    },
+    "IMPORTANDEXPORT": {
+        "CODES": {
+            "SITE_LESS": "Please select site.",
+            "EXCEL_LESS": "Please select excel file.",
+            "TAG_UPLOAD_SUCCESS": "The tag file was uploaded successfully",
+            "ASSET_UPLOAD_SUCCESS": "The asset file was uploaded successfully",
+            "MANDD_UPLOAD_SUCCESS": "The M&D file was uploaded successfully",
+            "TIMEOUT": "The server request timeout"
+        },
+        "EXCEL1001": "File format error.",
+        "EXCEL1002": "The alarm does not match with the selected site.",
+        "UPLOAD1001": "Temporary file is unusual, please try again or contact your administrator"
+    },
+    "ALERT": {
+        "PROPERTIES": {
+            "id": "id",
+            "alertname": "Alert Name",
+            "status": "Status",
+            "alertid": "Alert ID",
+            "severity": "Severity",
+            "alertSource": "Alert Source",
+            "eventTime": "Event Time"
+        },
+        "LIST": {
+            "TITLE": "All",
+            "HEADER": {
+                "ALERTNAME": "Alert Name",
+                "STATUS": "Status",
+                "ALERTID": "Alert ID",
+                "SEVERITY": "Severity",
+                "SITE": "Site",
+                "ALERTSOURCE": "Alert Source",
+                "EVENTTIME": "Event Time",
+                "CREATOR": "Owner"
+            }
+        },
+        "TAB": {
+            "ALL": "All",
+            "UNCLAIMED": "Unclaimed",
+            "INPROCESS": "In-process",
+            "CLOSED": "Closed",
+            "MYALERT": "My Alerts",
+            "ACTION": {
+                "MOREINFO": "More Info"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "The alert was updated successfully.",
+            "CLAIM_FAIL": "You are not the owner of the alert, and have no access to this action. "
+        },
+        "DETAIL": {
+            "TITLE": "Alert Detail",
+            "ALERTINOR": "Alert Information",
+            "ALERTBASIC": "Basic Information",
+            "ALERTNAME": "Alert name",
+            "SEVERITY": "Severity",
+            "SOURCE": "Source",
+            "ALERTID": "Alert ID",
+            "STATUS": "Status",
+            "OWNER": "Owner",
+            "SOURCEOWNER": "Source Owner",
+            "EVENTTIME": "Event Time",
+            "LASTUPDATE": "Last Update",
+            "GROUP": "Group",
+            "SITE": "Site",
+            "PLANT": "Plant",
+            "BLOCK": "Block",
+            "UNIT": "Unit",
+            "ASSET": "Asset",
+            "SOURCESTATUS": "Source Status",
+            "LINKOFCASE": "Links Of Case",
+            "DATETIME": "Date Time",
+            "ID": "ID",
+            "CLOSURENOTE": "Closure Note",
+            "CATEGORY": "Category",
+            "COMMENT": "Comment",
+            "ISSUECLASSIFICATION": "Issue Classification",
+            "NOTES": "Notes",
+            "CLOSURE": {
+                "NOACTION": "No Action",
+                "SENSORREPAIR": "Sensor Repair",
+                "OPERATIONALCHANGE": "Operational Change",
+                "SCHEDULEDMAINTENANCE": "Scheduled Maintenance",
+                "UNPLANNEDMAINTENANCE": "Unplanned Maintenance",
+                "OTHERS": "Others"
+            },
+            "BUTTON": {
+                "SAVE": "Save and Close",
+                "CANCEL": "Cancel"
+            },
+            "CREATECASEDETAIL": {
+                "TITLE": "Create Case",
+                "SEVERITY": "Severity",
+                "NAME": "Name",
+                "SYMPTOM": "Symptom",
+                "BUTTON": {
+                    "CREATE": "Create",
+                    "CLOSE": "Close"
+                }
+            },
+            "ACTIONTITLE": "Action",
+            "ACTION": {
+                "CLAIM": "Claim",
+                "CLOSE": "Close",
+                "CREATECASE": "Create Case",
+                "REOPEN": "Reopen"
+            }
+        },
+        "USER2004": "The user does not have a plant.",
+        "ANALYSIS": {
+            "NONETAG": "Please select the tag.",
+            "DATERANGE": "Start date must be earlier than or equal to the end date.",
+            "ANALYSISRESULT": "No analysis result."
+        },
+        "Error": {
+            "SYSTEM5003": "The user does not have a plant."
+        },
+        "STATUS": {
+            "UNCLAIMED": "Unclaimed",
+            "INPROCESS": "In-process",
+            "CLOSED": "Closed"
+        },
+        "ALERTSOURCE": {
+            "MD": "M&D",
+            "SMARTSIGNAL": "SMART SIGNAL"
+        }
+    },
+    "CASE": {
+        "LIST": {
+            "TITLE": "All",
+            "HEADER": {
+                "CASENAME": "Case Name",
+                "STATUS": "Status",
+                "CASEID": "Case ID",
+                "SITE": "Site",
+                "SEVERITY": "Severity",
+                "CASESOURCE": "Case Source",
+                "CREATIONTIME": "Create Time",
+                "CREATOR": "Creator"
+            },
+            "CREATE_CASE": "Create Case"
+        },
+        "TAB": {
+            "ALL": "All",
+            "UNCLAIMED": "Open",
+            "INPROCESS": "Reopen",
+            "CLOSED": "Closed",
+            "MYCASE": "My Cases",
+            "ACTION": {
+                "MOREINFO": "More Info"
+            }
+        },
+        "CODES": {
+            "CREATE_SUCCESS": "Created case for this alert successfully.",
+            "UPDATE_SUCCESS": "The case was updated successfully."
+        },
+        "DETAIL": {
+            "TITLE": "Case Detail",
+            "CASEINOR": "Case Information",
+            "ALERTBASIC": "Basic Information",
+            "CASENAME": "Case name",
+            "SEVERITY": "Severity",
+            "EXTERNALCASE": "External Case",
+            "CASEID": "Case ID",
+            "STATUS": "Status",
+            "CREATOR": "Creator",
+            "CASESOURCE": "Case Source",
+            "CREATIONTIME": "Create Time",
+            "LASTUPDATE": "Last Update",
+            "GROUP": "Group",
+            "SITE": "Site",
+            "PLANT": "Plant",
+            "BLOCK": "Block",
+            "UNIT": "Unit",
+            "ASSET": "Asset",
+            "SOURCESTATUS": "Source Status",
+            "LINKOFALERT": "Links Of Alert",
+            "DATETIME": "Date Time",
+            "ID": "ID",
+            "CLOSURENOTE": "Closure Note",
+            "CATEGORY": "Category",
+            "COMMENT": "Comment",
+            "CLOSURE": {
+                "NOACTION": "No Action",
+                "SENSORREPAIR": "Sensor Repair",
+                "OPERATIONALCHANGE": "Operational Change",
+                "SCHEDULEDMAINTENANCE": "Scheduled Maintenance",
+                "UNPLANNEDMAINTENANCE": "Unplanned Maintenance",
+                "OTHERS": "Others"
+            },
+            "ACTIONTITLE": "Action",
+            "ACTION": {
+                "CLOSE": "Close",
+                "REOPEN": "Reopen"
+            },
+            "REPORT": {
+                "TITLE": "Report",
+                "SYMPTOM": "Symptom",
+                "DIAGNOSIS": "Diagnosis",
+                "RECOMMENDATION": "Recommendation"
+            }
+        },
+        "USER2004": "The user does not have a plant.",
+        "STATUS": {
+            "OPENED": "Opened",
+            "REOPEN": "Reopen",
+            "CLOSED": "Closed"
+        },
+        "CASESOURCE": {
+            "MD": "M&D",
+            "SMARTSIGNAL": "SMART SIGNAL",
+            "GMOC": "GMOC"
+        }
+    },
+    "GROUP": {
+        "PROPERTIES": {
+            "id": "id",
+            "name": "Group Name",
+            "code": "Group Code",
+            "description": "Description"
+        },
+        "LIST": {
+            "TITLE": "Group List",
+            "HEADER": {
+                "NAME": "Group Name",
+                "CODE": "Group Code",
+                "DESCRIPTION": "Description"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "The group was updated successfully.",
+            "CREATE_SUCCESS": "The group was created successfully."
+        },
+        "DETAIL": {
+            "TITLE": "Group",
+            "GROUPNAME": "Group Name",
+            "GROUPCODE": "Group Code",
+            "DESCRIPTION": "Description",
+            "ACTION": {
+                "SAVE": "Save",
+                "CANCEL": "Cancel",
+                "BACK": "Back",
+                "CREATEGROUP": "Create Group"
+            },
+            "FORM_INVALIDATE": {
+                "NAME": "Group Name is required!",
+                "CODE": "Group Code is required!"
+            }
+        }
+    },
+    "SITE": {
+        "PROPERTIES": {
+            "id": "id",
+            "name": "Site Name",
+            "code": "Site Code",
+            "longitude": "Longitude",
+            "latitude": " Latitude",
+            "description": "Description"
+        },
+        "LIST": {
+            "TITLE": "Site List",
+            "HEADER": {
+                "NAME": "Site Name",
+                "CODE": "Site Code",
+                "LONGITUDE": "Longitude",
+                "LATITUDE": "Latitude",
+                "DESCRIPTION": "Description"
+            },
+            "SEARCH": {
+                "SEARCH": "Search",
+                "RESET": "Reset",
+                "NULLNOTIFY": "Please choose the filter criteria."
+            },
+            "DROPDOWNITEM": {
+                "GROUP": "--Group--"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "The site was updated successfully.",
+            "CREATE_SUCCESS": "The site was created successfully."
+        },
+        "DETAIL": {
+            "TITLE": "Site",
+            "SITENAME": "Site Name",
+            "SITECODE": "Site Code",
+            "PARENTID": "Group",
+            "LONGITUDE": "Longitude",
+            "LATITUDE": "Latitude",
+            "DESCRIPTION": "Description",
+            "ACTION": {
+                "SAVE": "Save",
+                "CANCEL": "Cancel",
+                "BACK": "Back",
+                "CREATESITE": "Create Site"
+            },
+            "FORM_INVALIDATE": {
+                "NAME": "Site Name is required!",
+                "CODE": "Site Code is required!",
+                "GROUP": "Group is required!",
+                "LONGITUDE": "Longitude is required!",
+                "LATITUDE": "Latitude is required!"
+            }
+        }
+    },
+    "PLANT": {
+        "PROPERTIES": {
+            "id": "id",
+            "name": "Plant Name",
+            "code": "Plant Code",
+            "description": "Description"
+        },
+        "LIST": {
+            "TITLE": "Plant List",
+            "HEADER": {
+                "NAME": "Plant Name",
+                "CODE": "Plant Code",
+                "SSID": "Smart Signal ID",
+                "DESCRIPTION": "Description"
+            },
+            "SEARCH": {
+                "SEARCH": "Search",
+                "RESET": "Reset",
+                "NULLNOTIFY": "Please choose the filter criteria."
+            },
+            "DROPDOWNITEM": {
+                "GROUP": "--Group--",
+                "SITE": "--Site--"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "The plant was updated successfully.",
+            "CREATE_SUCCESS": "The plant was created successfully."
+        },
+        "DETAIL": {
+            "TITLE": "Plant",
+            "PLANTNAME": "Plant Name",
+            "PLANTCODE": "Plant Code",
+            "GROUP": "Group",
+            "PARENTID": "Site",
+            "SSID": "Smart Signal ID",
+            "DESCRIPTION": "Description",
+            "ACTION": {
+                "SAVE": "Save",
+                "CANCEL": "Cancel",
+                "BACK": "Back",
+                "CREATEPLANT": "Create Plant"
+            },
+            "FORM_INVALIDATE": {
+                "NAME": "Plant Name is required!",
+                "CODE": "Plant Code is required!",
+                "GROUP": "Group is required!",
+                "SITE": "Site is required!"
+            }
+        }
+    },
+    "BLOCK": {
+        "PROPERTIES": {
+            "id": "id",
+            "name": "Block Name",
+            "code": "Block Code",
+            "description": "Description"
+        },
+        "LIST": {
+            "TITLE": "Block List",
+            "HEADER": {
+                "NAME": "Block Name",
+                "CODE": "Block Code",
+                "ASSETTYPE": "Block Type",
+                "ASSETPATH": "Asset Path",
+                "SSID": "Smart Signal ID",
+                "DESCRIPTION": "Description"
+            },
+            "SEARCH": {
+                "SEARCH": "Search",
+                "RESET": "Reset",
+                "NULLNOTIFY": "Please choose the filter criteria."
+            },
+            "DROPDOWNITEM": {
+                "GROUP": "--Group--",
+                "SITE": "--Site--",
+                "PLANT": "--Plant--",
+                "BLOCKTYPE": "--Block Type--"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "The Block was updated successfully.",
+            "CREATE_SUCCESS": "The Block was created successfully."
+        },
+        "DETAIL": {
+            "TITLE": "Block",
+            "BLOCKNAME": "Block Name",
+            "BLOCKCODE": "Block Code",
+            "BLOCKTYPE": "Block Type",
+            "ASSETPATH": "Asset Path",
+            "SSID": "Smart Signal ID",
+            "GROUP": "Group",
+            "SITE": "Site",
+            "PARENTID": "Plant",
+            "DESCRIPTION": "Description",
+            "ACTION": {
+                "SAVE": "Save",
+                "CANCEL": "Cancel",
+                "BACK": "Back",
+                "CREATEBLOCK": "Create Block"
+            },
+            "FORM_INVALIDATE": {
+                "NAME": "Block Name is required!",
+                "CODE": "Block Code is required!",
+                "GROUP": "Group is required!",
+                "SITE": "Site is required!",
+                "PLANT": "Plant is required!",
+                "ASSETTYPE": "Block type is required!"
+            }
+        }
+    },
+    "UNIT": {
+        "PROPERTIES": {
+            "id": "id",
+            "name": "Unit Name",
+            "code": "Unit Code",
+            "description": "Description"
+        },
+        "LIST": {
+            "TITLE": "Unit List",
+            "HEADER": {
+                "NAME": "Unit Name",
+                "CODE": "Unit Code",
+                "ASSETPATH": "Asset Path",
+                "SSID": "Smart Signal ID",
+                "DESCRIPTION": "Description"
+            },
+            "SEARCH": {
+                "SEARCH": "Search",
+                "RESET": "Reset",
+                "NULLNOTIFY": "Please choose the filter criteria."
+            },
+            "DROPDOWNITEM": {
+                "GROUP": "--Group--",
+                "SITE": "--Site--",
+                "PLANT": "--Plant--",
+                "BLOCK": "--Block--"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "The Unit was updated successfully.",
+            "CREATE_SUCCESS": "The Unit was created successfully."
+        },
+        "DETAIL": {
+            "TITLE": "Unit",
+            "UNITNAME": "Unit Name",
+            "UNITCODE": "Unit Code",
+            "ASSETPATH": "Asset Path",
+            "SSID": "Smart Signal ID",
+            "GROUP": "Group",
+            "SITE": "Site",
+            "PLANT": "Plant",
+            "PARENTID": "Block",
+            "DESCRIPTION": "Description",
+            "ACTION": {
+                "SAVE": "Save",
+                "CANCEL": "Cancel",
+                "BACK": "Back",
+                "CREATEUNIT": "Create Unit"
+            },
+            "FORM_INVALIDATE": {
+                "NAME": "Unit Name is required!",
+                "CODE": "Unit Code is required!",
+                "GROUP": "Group is required!",
+                "SITE": "Site is required!",
+                "PLANT": "Plant is required!",
+                "BLOCK": "Block is required!"
+            }
+        }
+    },
+    "ASSET": {
+        "DASHBOARD1001": "Please contact the administrator to set the KPI.",
+        "PROPERTIES": {
+            "id": "id",
+            "name": "Asset Name",
+            "code": "Asset Code",
+            "description": "Description"
+        },
+        "LIST": {
+            "TITLE": "Asset List",
+            "HEADER": {
+                "NAME": "Asset Name",
+                "CODE": "Asset Code",
+                "ASSETPATH": "Asset Path",
+                "SSID": "Smart Signal ID",
+                "DESCRIPTION": "Description"
+            },
+            "SEARCH": {
+                "SEARCH": "Search",
+                "RESET": "Reset",
+                "NULLNOTIFY": "Please choose the filter criteria."
+            },
+            "DROPDOWNITEM": {
+                "GROUP": "--Group--",
+                "SITE": "--Site--",
+                "PLANT": "--Plant--",
+                "BLOCK": "--Block--",
+                "UNIT": "--Unit--"
+            }
+        },
+        "CODES": {
+            "UPDATE_SUCCESS": "The Asset was updated successfully.",
+            "CREATE_SUCCESS": "The Asset was created successfully."
+        },
+        "DETAIL": {
+            "TITLE": "Asset",
+            "ASSETNAME": "Asset Name",
+            "ASSETCODE": "Asset Code",
+            "ASSETPATH": "Asset Path",
+            "SSID": "Smart Signal ID",
+            "GROUP": "Group",
+            "SITE": "Site",
+            "PLANT": "Plant",
+            "BLOCK": "Block",
+            "PARENTID": "Unit",
+            "DESCRIPTION": "Description",
+            "ACTION": {
+                "SAVE": "Save",
+                "CANCEL": "Cancel",
+                "BACK": "Back",
+                "CREATEASSET": "Create Asset"
+            },
+            "FORM_INVALIDATE": {
+                "NAME": "Asset Name is required!",
+                "CODE": "Asset Code is required!",
+                "GROUP": "Group is required!",
+                "SITE": "Site is required!",
+                "PLANT": "Plant is required!",
+                "BLOCK": "Block is required!",
+                "UNIT": "Unit is required!"
+            }
+        }
+    },
+    "IMPORT": {
+        "LIST": {
+            "TITLE": "Import And Export",
+            "TAGIMPORT": "Tag Import",
+            "TAGEXPORT": "Tag Export",
+            "ASSETIMPORT": "Asset Import",
+            "ASSETEXPORT": "Asset Export",
+            "MANDDIMPORT": "M&D Import",
+            "MANDDEXPORT": "M&D Export",
+            "SCREENIMPORT": "Large Screen Import",
+            "SCREENEXPORT": "Large Screen Export",
+            "CATEGORY": "Category",
+            "IMPORT": "Import",
+            "EXPORT": "Export",
+            "TAG": "Tag",
+            "ASSET": "Asset",
+            "ACTION": {
+                "ADD_FILE": "Add File",
+                "IMPORT": "Import",
+                "EXPORT": "Export"
+            }
+        }
+    },
+    "SYSTEM_ERROR": "The system error,please contact administrator.",
+    "ROLE_EDIT": "The role was updated successfully.",
+    "ROLE_CREATE": "The role was created successfully.",
+    "COMMON": {
+        "SAVE_BTN": "Save",
+        "BACK_BTN": "Back",
+        "Cancel": "Cancel",
+        "Edit": "Edit",
+        "Edit_SAVE": "Edit and Save",
+        "RESET": "Reset",
+        "Go": "Go",
+        "OK": "OK",
+        "SEARCH": "Search",
+        "CLOSE": "Close",
+        "DETAIL": "Detail",
+        "CLEAR_BTN": "Clear",
+        "ALL_LABEL": "All",
+        "NONE_LABEL": "None",
+        "TAB": "Tab",
+        "SUBSET": "Subset",
+        "REALTIMEVALUE": "Real Time",
+        "ON": "on",
+        "OFF": "off",
+        "TOTAL": "Total",
+        "DROPDOWN_DEFAULT": {
+            "GROUP": "--Group--",
+            "SITE": "--Site--",
+            "PLANT": "--Plant--",
+            "BLOCK": "--Block--",
+            "UNIT": "--Unit--"
+        },
+        "LABEL": {
+            "KPI": "KPI",
+            "THRESHOLD": "Threshold",
+            "RED": "Red",
+            "YELLOW": "Yellow",
+            "GREEN": "Green"
+        },
+        "NOTIFICATION": {
+            "NO_PLANTS": "You don't belong any plant, please contact the administrator."
+        }
+    },
+    "LOG": {
+        "TITLE": "Log",
+        "ACTION": {
+            "UPDATE": "Update",
+            "CREATE": "Create",
+            "CLOSE": "Close",
+            "NOTE": "Note",
+            "EVIDENCE": "Evidence"
+        },
+        "MESSAGE": {
+            "ALERT_CREATE_CASE": "Created case for this alert.",
+            "ALERT_REOPEN": "Reopened this alert.",
+            "ALERT_CLOSE": "Created closure note and closed this alert.",
+            "ALERT_NOTE": "Created note for this alert.",
+            "ALERT_EVIDENCE": "Uploaded evidence for this alert.",
+            "ALERT_CLAIM": "Claimed this alert.",
+            "CASE_CREATE_CASE": "Created case.",
+            "CASE_CLOSE": "Created closure note and closed this case.",
+            "CASE_NOTE": "Created note for this case.",
+            "CASE_EVIDENCE": "Uploaded evidence for this case.",
+            "CASE_REPORT": "Updated report for this case.",
+            "UPDATE_INFORMATION": "Updated case information for this case."
+        }
+    },
+    "NOTE": {
+        "SEND": "Send",
+        "NOTE": "Note",
+        "TYPEMESSAGE": "Type Message"
+    },
+    "CREATE": {
+        "CASE_SUCCESS": "Created case for this alert successfully."
+    },
+    "CREATE_CASE": {
+        "TITLE": "Create Case",
+        "SEVERITY": "Severity",
+        "CASENAME": "Case Name",
+        "SYMPOTOMS": "Sympotoms",
+        "SITE": "Site",
+        "PLANT": "Plant",
+        "ACTION": {
+            "CLOSE": "Close",
+            "CREATE": "Create Case"
+        },
+        "FORM_INVALIDATE": {
+            "CASENAME": "Case Name is required!",
+            "SEVERITY": "Severity is required!",
+            "SITE": "Site is required!",
+            "PLANT": "Plant is required!",
+            "SYMPOTOMS": "Sympotoms is required!"
+        }
+    },
+    "MORE_FILTER": {
+        "Title": "More Filters",
+        "Asset Name:": "Asset Name:",
+        "Owner/User Name:": "Owner/User Name:",
+        "Severity:": "Severity:",
+        "Source:": "Source:",
+        "Alert Name:": "Alert Name:",
+        "Case Name:": "Case Name:",
+        "Event Time:": "Event Time:",
+        "Creation Time:": "Creation Time:",
+        "Plant:": "Plant:",
+        "Block:": "Block:",
+        "Unit:": "Unit:",
+        "Apply": "Apply",
+        "Filter Name": "Filter Name:",
+        "New Filter": "New Filter",
+        "contains": "contains",
+        "is equal to": "is equal to",
+        "is not equal to": "is not equal to",
+        "is greater than": "is greater than",
+        "is greater than or equal to": "is greater than or equal to",
+        "is less than": "is less than",
+        "is less than or equal to": "is less than or equal to",
+        "Last 24 Hours": "Last 24 Hours",
+        "Last 7 Days": "Last 7 Days",
+        "Last 30 Days": "Last 30 Days",
+        "Last 3 Months": "Last 3 Months",
+        "Last 6 Months": "Last 6 Months",
+        "Last 12 Months": "Last 12 Months",
+        "Custom Range": "Custom Range",
+        "LIST_TITLE": "My Filters",
+        "CONDITIONS": "Conditions",
+        "CLEAR_FILTER_BTN": "Clear",
+        "severity1": 1,
+        "severity2": 2,
+        "severity3": 3,
+        "severity4": 4,
+        "severity5": 5,
+        "md": "M&D",
+        "ss": "Smart Signal",
+        "NOTIFICATION": {
+            "SAME_NAME_CREATE": "Filter name already exist",
+            "SAME_NAME_EDIT": "Filter name already exist",
+            "UPDATE_SUCCESS": "The filter was updated successfully.",
+            "CREATE_SUCCESS": "The filter was created successfully.",
+            "CLEAR_TIMEOUT": "Timeout to Clear filter."
+        }
+    },
+    "KNOWLEDGE": {
+        "KNOWLEDGE_SEARCH": "Knowledge Search",
+        "SEARCH_TIP": "For fuzzy search,* should be attached to end of the key words; Please use space to separate mutiple tags or keywords.",
+        "HOT_SEARCH_TERMS": "Hot Search Terms",
+        "SEARCH_PLACEHOLDER": "Search...",
+        "CASENAME": "CaseName",
+        "OWNERNAME": "OwnerName",
+        "BLOCKNAME": "BlockName",
+        "UNITNAME": "UnitName",
+        "CREATIONTIME": "CreationTime",
+        "STATUSNAME": "StatusName",
+        "PLANTNAME": "PlantName"
+    },
+    "FILTER_GROUP": {
+        "TIMEINTERVAL": "--Time Interval--",
+        "THREEDAYS": "3 Days",
+        "TWOWEEKS": "2 Weeks",
+        "ONEMONTH": "1 Month",
+        "CUSTOMIZED": "Customized",
+        "CASCADING_LESS": "Please choose the filter criteria.",
+        "DATE_LESS": "Please choose the time range for this chart.",
+        "DATE_WRONG": "Search failed, start date must be earlier than or equal to the end date.",
+        "ACTIVEON": "Open the real time value"
+    },
+    "ASSETSTATUS": {
+        "PLANT": "Plant",
+        "BLOCK": "Block",
+        "ASSETSTATUS": "Asset Status",
+        "MAINSTEAMPRESSURE": "Main Steam Pressure",
+        "MAINSTEAMTEMPERATURE": "Main Steam Temperature",
+        "STEFFICIENCY": "ST Efficiency",
+        "CONDENSEREFFICIENCY": "Condenser Efficiency",
+        "COOLING": "Cooling Tower Efficiency",
+        "GTEFFICIENCY": "GT Efficiency",
+        "HRSGEFFICIENCY": "HRSG Efficiency",
+        "GTSPEED": "GT Speed",
+        "STSPEED": "ST Speed",
+        "POWERGRIDFREQUENCY": "Power Grid Frequency",
+        "AUXPOWERRATE": "Aux. Power Rate",
+        "OUTPUT": "Output(Actual)",
+        "STLOAD": "ST Load",
+        "GASTURBINE": "Gas Turbine",
+        "HRSG": "HRSG",
+        "STEAMTURBINE": "Steam Turbine",
+        "CONDENSER": "Condenser",
+        "COOLINGTOWER": "Cooling Tower",
+        "RED": "Red",
+        "YELLOW": "Yellow",
+        "GREEN": "Green",
+        "SEARCH": "Search",
+        "SAVE": "Save",
+        "CLOSE": "Close"
+    },
+    "OPERATION": {
+        "OPERATIONCOUNT": "Operation Count"
+    },
+    "CUSTOMIZEDKPI": {
+        "CUSTOMIZEDKPI": "Customized KPI",
+        "SELECTKPI": "Select KPI",
+        "MORESELECT": "At most 8 KPIs can be selected",
+        "SAVE": "Save",
+        "CLOSE": "Close",
+        "DASHBOARD1001": "Please contact the administrator to set the KPI.",
+        "MOST_EIGHT_KPI": "At most 8 KPIs can be selected"
+    },
+    "CONFIGURATION": {
+        "DASHBOARD": {
+            "COMMON": {
+                "MOST_FOUR_KPI": "At most 4 KPIs can be selected",
+                "MOST_THREE_KPI": "At most 3 KPIs can be selected",
+                "MOST_ONE_KPI": "At most 1 KPI can be selected",
+                "MOST_4_KPI": "At most 4 KPIs can be selected",
+                "MOST_3_KPI": "At most 3 KPIs can be selected",
+                "MOST_1_KPI": "At most 1 KPI can be selected",
+                "MUST_ONE_KPI": "1 KPI must be selected"
+            },
+            "MYFLEET": {
+                "TITLE": {
+                    "HOME": "Myfleet",
+                    "TAG": "Tags",
+                    "MAP": "Power Plant Map"
+                },
+                "P1": "Point 1",
+                "P2": "Point 2",
+                "P3": "Point 3",
+                "P4": "Point 4",
+                "P5": "Point 5",
+                "HTTP": {
+                    "CREATE_SUCCESS": "Configurate myfleet sucessfully"
+                },
+                "BTN": {
+                    "CHECK_TAGS": "Check Tags"
+                }
+            },
+            "PLANT_MAP": {
+                "TITLE": {
+                    "HOME": "Power Plant Map"
+                },
+                "HTTP": {
+                    "CREATE_SUCCESS": "Configurate power plant map sucessfully"
+                },
+                "NOTIFICATION": {
+                    "CONFIG_PLANT_MAP_ALARM": "Please configurate the instruments board"
+                }
+            },
+            "ASSET_STATUS": {
+                "TITLE": {
+                    "HOME": "Asset Status",
+                    "TAG": "Tags",
+                    "HEADERS": {
+                        "GasTurbine": "Gas Turbine",
+                        "HRSG": "HRSG",
+                        "SteamTurbine": "Steam Turbine",
+                        "Condenser": "Condenser",
+                        "CoolingTower": "Cooling Tower"
+                    },
+                    "GasTurbine11": "Gas Turbine 1-1",
+                    "GasTurbine21": "Gas Turbine 2-1",
+                    "CoalFiredUnit": "Coal-fired Unit"
+                },
+                "HTTP": {
+                    "CREATE_SUCCESS": "Configurate asset status sucessfully"
+                }
+            },
+            "FIXED_KPI": {
+                "TITLE": {
+                    "HOME": "Fixed KPI",
+                    "S1C1": "Subset 1 - Chart 1",
+                    "S1C2": "Subset 1 - Chart 2",
+                    "S2C1": "Subset 2 - Chart 1",
+                    "S2C2": "Subset 2 - Chart 2",
+                    "S3C1": "Subset 3 - Chart 1",
+                    "S3C2": "Subset 3 - Chart 2"
+                },
+                "HTTP": {
+                    "CREATE_SUCCESS": "Configurate fixed KPI sucessfully"
+                }
+            },
+            "OPERATION_COUNT": {
+                "TITLE": {
+                    "HOME": "Operation Count",
+                    "INSTRUMENT": "Instruments board",
+                    "KPI": "KPI"
+                },
+                "HTTP": {
+                    "CREATE_SUCCESS": "Configurate operation count sucessfully"
+                },
+                "NOTIFICATION": {
+                    "CONFIG_INSTRUMENT_ALARM": "Please configurate the instruments board"
+                }
+            },
+            "KPIS": {
+                "Output(Actual)": "Output(Actual)",
+                "Corrected Full Load Output": "Corrected Full Load Output",
+                "Actual Capacity MW": "Actual Capacity MW",
+                "Actual Heat Rate": "Actual Heat Rate",
+                "Corrected Full Load Heat Rate": "Corrected Full Load Heat Rate",
+                "Start Fuel": "Start Fuel",
+                "Starting Reliability": "Starting Reliability",
+                "Start Time": "Start Time",
+                "Output trend-Last Start Up": "Output trend-Last Start Up",
+                "Speed trend-Last Start Up": "Speed trend-Last Start Up",
+                "NOx": "NOx",
+                "CO": "CO",
+                "SO₂": "SO₂",
+                "Main Steam Pressure": "Main Steam Pressure",
+                "Main Steam Temperature": "Main Steam Temperature",
+                "GT Speed": "GT Speed",
+                "Aux. Power Rate": "Aux. Power Rate",
+                "Power Grid Frequency": "Power Grid Frequency",
+                "ST Speed": "ST Speed",
+                "GT Efficiency Degradation": "GT Efficiency Degradation",
+                "HRSG Efficiency Degradation": "HRSG Efficiency Degradation",
+                "ST Efficiency Degradation": "ST Efficiency Degradation",
+                "Condenser Efficiency Degradation": "Condenser Efficiency Degradation",
+                "Cooling Tower Efficiency Degradation": "Cooling Tower Efficiency Degradation",
+                "GT Efficiency": "GT Efficiency",
+                "HRSG Efficiency": "HRSG Efficiency",
+                "ST Efficiency": "ST Efficiency",
+                "Condenser Efficiency": "Condenser Efficiency",
+                "Cooling Tower Efficiency": "Cooling Tower Efficiency",
+                "Trips": "Trips",
+                "Factored Startup": "Factored Startup",
+                "Fired Hours": "Fired Hours",
+                "Factored Fired Hours": "Factored Fired Hours",
+                "Remaining Operation Hours": "Remaining Operation Hours",
+                "Daily Fuel Gas Consumption": "Daily Fuel Gas Consumption",
+                "MWH (Day)": "MWH (Day)",
+                "Fuel Gas Flow (Month)": "Fuel Gas Flow (Month)",
+                "Total MWH (Month)": "Total MWH (Month)",
+                "Fired Startup": "Fired Startup",
+                "Remaining Startup": "Remaining Startup",
+                "Unit Load": "Unit Load",
+                "GT Load": "GT Load",
+                "ST Load": "ST Load",
+                "Pump Eff": "Pump Eff",
+                "Fan Eff": "Fan Eff",
+                "Aux Boiler Eff": "Aux Boiler Eff",
+                "FWH Eff": "FWH Eff",
+                "Air Heater Eff": "Air Heater Eff",
+                "Compressor Eff": "Compressor Eff"
+            },
+            "StartingReliability": {
+                "Starting Reliability": "Starting Reliability"
+            },
+            "NOTIFY": {
+                "MYFLEET_VALIDATE": "Valid data please"
+            },
+            "TITLE": {
+                "MAPTITLE": "Power Plant Map",
+                "CASEALERT": "Case/Alert "
+            }
+        }
+    },
+    "DASHBOARD": {
+        "CASEALERT": {
+            "ALERTTOTAL": "Total Alerts",
+            "ALERTPLANT": "Alerts by Plant",
+            "ALERTASSET": "Alerts by Asset",
+            "ALERTSOURCE": "Alerts by Source",
+            "CASETOTAL": "Total Cases",
+            "CASEPLANT": "Cases by Plant",
+            "CASEASSET": "Cases by Asset",
+            "CASESOURCE": "Cases by Source",
+            "PLANTSELECT": "--Plant--",
+            "ERRORMESSAGE": {
+                "NONEPLANTSELECTD": "Please select the plant for this chart."
+            },
+            "TITLE": {
+                "CASE": "Case",
+                "ALERT": "Alert"
+            }
+        },
+        "MYFLEET": {
+            "TITLE": "Myfleet",
+            "NONEKPISETTINGED": "Please contact the administrator to set this subset's the KPI."
+        },
+        "FIXEDKPI": {
+            "TITLE": "Fixed Kpi"
+        },
+        "MAP": {
+            "ERRORMESSAGE": {
+                "NONEKPISETTINGED": "Please contact the administrator to set the KPI."
+            },
+            "USER2004": "You don't belong any plant, please contact the administrator."
+        }
+    }
+}

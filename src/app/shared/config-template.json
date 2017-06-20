@@ -1,0 +1,32 @@
+{
+  "list": {
+    "title": "international key",
+    "headers": [{
+        "dataKey": "json data property from server",
+        "international": "international key"
+      },
+      {
+        "dataKey": "json data property from server",
+        "international": "international key"
+      }
+    ],
+    "search": {
+      "placeholder": "json data property from server",
+      "international": "international key"
+    },
+    "actions": {
+      "header": "Actions' Header",
+      "actions": [{
+        "code": "action code",
+        "clazz": "action class"
+      },{
+        "code":"action code",
+        "clazz":"action class"
+      }]
+    },
+    "ACTION_CODES": {
+      "EDIT": 0,
+      "DETAIL":1
+    }
+  }
+}

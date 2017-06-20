@@ -1,0 +1,40 @@
+<div class="wrapper" (window:resize)="onResize($event)">
+    <!-- Main Header -->
+    <main-header></main-header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <main-sidebar>
+
+    </main-sidebar>
+    <div class="main-sidebar">
+        <div class="sidebar" style="height: auto;">
+            <ul class="sidebar-menu">
+                <li class="treeview specialClazz">
+                    <a href="javascript:void(0);"><i class="iconfont icon-alert"></i>
+                    <span class="server-data-translate" id="Alert">Menu 1</span>
+                    <span class="pull-right-container"><i class="fa fa-angle-right mrm"></i></span>
+              </a></li>
+                <li class="treeview specialClazz">
+                    <a href="javascript:void(0);"><i class="iconfont icon-case"></i> 
+                    <span class="server-data-translate" id="Case">Menu 2</span><span class="pull-right-container">
+                        <i class="fa fa-angle-right mrm"></i></span>
+              </a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" (click)="onContentWrapperClick()">
+        <router-outlet></router-outlet>
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Main Footer -->
+    <main-footer></main-footer>
+
+    <!-- Control Sidebar -->
+    <!--<control-sidebar></control-sidebar>-->
+    <!-- /.control-sidebar -->
+
+</div>

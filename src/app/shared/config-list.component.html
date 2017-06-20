@@ -1,0 +1,103 @@
+<div class="main-content">
+    <div class="box cm-box-default common content-height" [class.noLineNoHeader]="!title">
+        <div class="box-header with-border" *ngIf="title">
+            <h3 class="box-title pull-left">{{title | translate}}</h3>
+            <div class="pull-left mlm borderL">
+                <a href="javascript:void(0)" *ngFor="let tool of tools" (click)="toolClick(tool)">
+                    <i class="{{tool?.val?.clazz}}"></i>
+                </a>
+            </div>
+            <div class="box-tools">
+                <div class="pull-right xs-mlm">
+                    <button class="btn btn-outline-ge  more-filter-btn" *ngIf="headerAuthRightImgBtn && headerAuthRightImgBtn.length == 5" (click)="onRightImgClick()"
+                        has-permission [model]="headerAuthRightImgBtn[2]" [menu]="headerAuthRightImgBtn[3]" [action]="headerAuthRightImgBtn[4]">
+              <i class="glyphicon {{headerAuthRightImgBtn[1]}}"></i>{{headerAuthRightImgBtn[0] | translate}}
+            </button>
+                </div>
+                <div class="pull-right" *ngIf="headerAuthRightButton && headerAuthRightButton.length == 4" [class.mrm]="headerAuthRightImgBtn && headerAuthRightImgBtn.length == 5">
+                    <label class="mrm h14 pding-right borderR" has-permission [model]="headerAuthRightButton[1]" [menu]="headerAuthRightButton[2]"
+                        [action]="headerAuthRightButton[3]">{{headerAuthRightMatchText}}</label>
+                    <button class="btn btn-primary  more-filter-btn" (click)="onRightBtnClick()" has-permission [model]="headerAuthRightButton[1]"
+                        [menu]="headerAuthRightButton[2]" [action]="headerAuthRightButton[3]">
+            {{headerAuthRightButton[0] | translate}}
+          </button>
+                </div>
+                <div class="pull-right xs-mlm" *ngIf="defaultSearch">
+                    <div class="input-group input-group-sm" style="width: 150px;">
+                        <input type="text" name="table_search" class="form-control pull-right" #spy placeholder="{{defaultSearch?.val?.international | translate}}">
+
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" (click)="search(spy.value)"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body table-responsive no-padding">
+            <table class="table table-hover table-bordered table-cm-default">
+                <tr>
+                    <th *ngFor="let header of headers" (click)="changeOrder($event, header)" class="oneLine">
+                        <i class="fa pull-left mtxs fa-sort" *ngIf="!header?.val?.hasNoOrder"></i> {{header?.val?.international
+                        | translate}}
+                    </th>
+                    <th>
+                        <!--{{actions.key}}-->
+                    </th>
+                </tr>
+
+                <tr *ngFor="let item of list | paginate: { itemsPerPage: perPageSize , currentPage: p, totalItems: pageSizes }; let i=index "
+                    (click)="clickLine(i)">
+                    <td *ngFor="let d of item; let ii=index">
+                        <label for="" *ngIf="!headers[ii]?.val?.type">{{d | translate}}</label>
+                        <label for="" *ngIf="headers[ii]?.val?.type ==1" class="severity-label severity{{d}}">
+              <span class="pull-left"><i class="iconfont icon-zycd"></i></span>
+              <span class="pull-left marginTopAndLeft">{{d}}</span>
+            </label>
+                        <label (click)="onTypeClick(i, 2, $event)" class="tagStatusLabel" *ngIf="headers[ii]?.val?.type ==2">
+              <span class="pull-left"><i class="glyphicon glyphicon-off tagstatus-{{d}}"></i></span>
+            </label>
+                        <div for="" *ngIf="headers[ii]?.val?.type == 3 && d.length > 0">
+                            <label class="severity-label severity4">
+                <span class="pull-left marginTopAndLeft" class="severity-label severity4">{{d[0]}}</span>
+              </label>
+                            <label class="severity-label severity4" *ngIf="d.length == 2">
+                <a href="javascript:void(0)"><span class="pull-left marginTopAndLeft" class="severity-label severity4">{{d[1]}}</span></a>
+              </label>
+                            <label class="severity-label severity4" *ngIf="d.length > 2">
+                <a href="javascript:void(0)" title="{{d[2].toString()}}"><span class="pull-left marginTopAndLeft" class="severity-label severity4">...</span></a>
+              </label>
+                        </div>
+                    </td>
+                    <td>
+                        <!--<button type="button" class="btn btn-cm-default" (click)="doAction(i, action)">{{action}}</button>-->
+                        <a href="javascript:void(0)" class="edit-btn pull-right" (click)="doAction(i, action.code,$event)" *ngFor="let action of actions?.val"><i class="{{action.clazz}}"></i></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="box-footer clearfix ">
+            <!--<ul class="pagination pagination-sm no-margin pull-right">
+        <li><a href="#">&laquo;</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">&raquo;</a></li>
+      </ul>-->
+            <div [class.hide]="true" (click)="p = 1" id="spyPagination"></div>
+            <div style="margin-left:-40px" class="pull-right">
+                <pagination-controls previousLabel="" nextLabel="" autoHide="true" (pageChange)="p = $event;onPageChanged(p)"></pagination-controls>
+            </div>
+            <div class="pull-right" [class.hide]="list?.length >= pageSizes">
+                <div class="totalItem">
+                    <span [class.hide]="!showTotal">{{'COMMON.TOTAL'|translate}}:</span>
+                    <span [class.hide]="!showTotal">{{pageSizes}}</span>
+                </div>
+                <button class="pull-right btn btn-primary btn-page xs-btn" (click)="goPage(spygo, p)">{{'COMMON.Go' | translate}}</button>
+                <input type="number" name="" #spygo class="pull-right config-input">
+                <div [class.hide]="true" (click)="p = pageTracker" id="gospy"></div>
+            </div>
+        </div>
+    </div>
+</div>

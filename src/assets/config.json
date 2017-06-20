@@ -1,0 +1,4 @@
+{
+    "DOMAIN": "http://192.168.10.199:9090/casemgmt",
+    "WEBSOCKET": "http://192.168.10.199:9091/websocket"
+}

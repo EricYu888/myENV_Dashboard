@@ -1,0 +1,15 @@
+.common-check .box .nav-stacked>li:hover {
+  border-left: 4px solid #e60012;
+}
+
+.common-check .box .nav-stacked>li:hover a {
+  background: #f0f4f7;
+}
+
+.common-check .nav>li>a:active,
+.common-check .nav>li>a:focus {
+  background: none;
+}
+.common-check .readonly a{
+  cursor: text !important;
+}
