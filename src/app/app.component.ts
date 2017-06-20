@@ -4,17 +4,9 @@
 import {
   Component,
   OnInit,
-  OnDestroy,
-  ViewEncapsulation,
-  ViewContainerRef
+  ViewEncapsulation
 } from '@angular/core';
 import { AppState } from './app.service';
-import {
-  TranslateService,
-  DefaultLangChangeEvent,
-  TranslationChangeEvent,
-  LangChangeEvent
-} from 'ng2-translate';
 
 /*
  * App Component
@@ -28,33 +20,20 @@ import {
   ],
   templateUrl : './app.component.html'
 })
-export class AppComponent implements OnInit, OnDestroy {
+export class AppComponent implements OnInit {
   public angularclassLogo = 'assets/img/angularclass-avatar.png';
-  public name = '';
+  public name = 'Angular 2 Webpack Starter';
   public url = 'https://twitter.com/AngularClass';
 
   constructor(
-    public appState: AppState,
-    public vcr: ViewContainerRef,
-    public translate: TranslateService
-  ) {
-    const browserLang = this.translate.getBrowserLang();
-    this.translate.use(browserLang.match(/en|zh/) ? browserLang : 'en');
-    this.translate.use(browserLang);
-    this.appState.currentLanguage = browserLang;
-  }
+    public appState: AppState
+  ) {}
 
   public ngOnInit() {
     console.log('Initial App State', this.appState.state);
-    this.appState.setRootViewContainer(this.vcr);
-  }
-
-  public ngOnDestroy() {
-   
   }
 
 }
-
 
 /*
  * Please review the https://github.com/AngularClass/angular2-examples/ repo for

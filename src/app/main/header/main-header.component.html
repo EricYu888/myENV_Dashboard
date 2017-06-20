@@ -1,13 +1,63 @@
 <header class="main-header">
     <!-- Logo -->
-    <header-logo></header-logo>
+    <a href="index2.html" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini">ENV</span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><b>myENV</b></span>
+    </a>
     <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
+    <nav class="navbar navbar-static-top text-center">
         <!-- Sidebar toggle button-->
         <a href="javascript:void(0);" class="sidebar-toggle" data-toggle="offcanvas" role="button" (click)="sidebarToggleClick($event)">
             <span class="sr-only">Toggle navigation</span>
         </a>
+        <div class="myEnvMid">
+            <p class="noMarginBm">myENV</p>
+
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle weaBtn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Please Select City<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li (click)="changeCity('beijing')"><a href="javascript:void(0)">Beijing</a></li>
+                    <li (click)="changeCity('shanghai')"><a href="javascript:void(0)">Shanghai</a></li>
+                    <li (click)="changeCity('dalian')"><a href="javascript:void(0)">Dalian</a></li>
+                </ul>
+            </div>
 
 
+        </div>
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <!-- Notifications: style can be found in dropdown.less -->
+                <li class="dropdown notifications-menu" dropdown>
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" dropdownToggle>
+                        <i class="fa fa-bell-o"></i>
+                        <span class="label label-warning">10</span>
+                    </a>
+                    <ul class="dropdown-menu" style="width:260px;" dropdownMenu>
+                        <li class="header">You have 10 notifications</li>
+                        <li>
+                            <!-- inner menu: contains the actual data -->
+                            <ul class="menu">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <i class="fa fa-users text-aqua"></i> Title1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <i class="fa fa-warning text-yellow"></i> Title2
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="footer"><a href="javascript:void(0);">View all</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </nav>
 </header>

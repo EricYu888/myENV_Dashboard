@@ -22,7 +22,7 @@ import { PermissionDirective } from './permission/permission-directive';
 import { PermissionDirectiveConfig } from './permission/permission-config';
 import { PermissionBtnComponent } from './permission/permission-btn.component';
 import { LinkedDatetime } from './date-time-picker/linked-date-time-picker.component';
-import { AppState, SESSION_STORAGE } from './../app.service';
+import { AppState } from './../app.service';
 import { InputPropertyChangeDirective } from './input-property-changed.directive';
 
 export function createTranslateLoader(http: Http) {

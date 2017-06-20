@@ -6,7 +6,6 @@ import { WeatherComponent } from './weather.component';
 import { WeatherService } from './weather.service';
 import { WeatherRoutingModule } from './weather.router';
 
-
 @NgModule({
     declarations: [
         WeatherComponent,
@@ -15,7 +14,6 @@ import { WeatherRoutingModule } from './weather.router';
         CommonModule,
         WeatherRoutingModule
     ],
-
     exports: [WeatherComponent],
     providers: [WeatherService]
 

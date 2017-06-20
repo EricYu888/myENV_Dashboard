@@ -5,7 +5,7 @@ import {
     TranslationChangeEvent,
     LangChangeEvent
 } from 'ng2-translate';
-import { AppState, SESSION_STORAGE } from './../../app.service';
+import { AppState } from './../../app.service';
  
 @Component({
     selector: 'localize',

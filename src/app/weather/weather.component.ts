@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy, Input, Output, EventEmitter } from '@angu
 import { Subscription } from 'rxjs';
 import { TranslateService } from 'ng2-translate';
 import { WeatherService } from './weather.service';
-import { AppState, SESSION_STORAGE } from './../app.service';
+import { AppState } from './../app.service';
 
 declare var echarts;
 declare var $;
@@ -14,15 +14,20 @@ declare var jQuery: any;
 })
 
 export class WeatherComponent implements OnInit, OnDestroy {
-
+    public mSub: Subscription;
     private sfwChart1: any;
     private option: any;
     private color = ['orange', 'lightblue'];
-    constructor() {
-
-
+    constructor(public appState: AppState,
+        public weatherService: WeatherService
+    ) {
     }
     public ngOnInit() {
+
+        this.mSub = this.appState.registerCityChangeListener((city) => {
+            this.changeCity(city);
+        });
+
         this.sfwChart1 = echarts.init(document.getElementById('sunSet'));
         this.bindChart();
     }
@@ -253,6 +258,18 @@ export class WeatherComponent implements OnInit, OnDestroy {
         $('.sunSet').resize(() => {
             this.sfwChart1.resize();
         })
+    }
+    public changeCity(city) {
+        var data = this.weatherService.getCurrentWeatherByCity(city);
+        if (data != null) {
+            $("#weather").html(data.weather);
+            $("#temp").html(data.temp);
+            $("#wet").html(data.wet);
+            $("#psi").html(data.psi);
+            $("#rain").html(data.rain);
+            $("#pic").removeClass().addClass(data.pic);
+        }
+
     }
 
     public ngOnDestroy() {

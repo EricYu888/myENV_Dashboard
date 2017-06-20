@@ -1,48 +1,46 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Router } from '@angular/router';
-import { AppState, SESSION_STORAGE } from '../../app.service';
+import { Component, Input, Output, OnInit, EventEmitter } from '@angular/core';
 import { AdminLteService } from './../admin-lte/admin-lte.services';
-import { MainService } from './../main.service';
-import { User } from './../models/user';
+import { AppState } from './../../app.service';
+import { KeyVal } from './../../shared/action-do';
 declare var $: any;
 @Component({
   selector: 'main-header',
   templateUrl: './main-header.component.html',
   styleUrls: ['./main-header.component.css']
 })
-export class MainHeaderComponent implements OnInit, OnDestroy {
-  public adminLte: any;
-  public index: any;
-  public user: User;
 
-  public userInfo: any;
-  public showFlag: boolean;
-  public showFlagRit: boolean;
-  constructor(
-    public appState: AppState,
-    public router: Router,
-    public adminLteService: AdminLteService,
-    public mainService: MainService) {
+export class MainHeaderComponent implements OnInit {
+  @Output() public onToggleClick = new EventEmitter<any>();
+
+  private adminLte: any;
+  private index: any;
+
+  constructor(public adminLteService: AdminLteService,
+    public appState: AppState) {
     this.adminLte = this.adminLteService.getAdminLte();
-
-    this.showFlag = false;
-    this.showFlagRit = false;
+    // this is aconstructor
+    this.index = 1;
   }
-
 
   public ngOnInit() {
     // to do sth.
   }
 
-  public ngOnDestroy() {
-    // this.mainService.currentUser.unsubscribe();
+  private myDropdownToggle() {
+    $('.my-dropdown-menu').hide();
   }
-
-
 
   public sidebarToggleClick(event) {
     event.stopPropagation();
     this.adminLteService.onSidebarToggleEvent();
+
+    console.log("event");
+    console.log(event);
+    if ($('body').hasClass('sidebar-open')) {
+      this.onToggleClick.emit(true);
+    } else {
+      this.onToggleClick.emit(false);
+    }
   }
 
   public onControlSidebarClick(event) {
@@ -50,5 +48,7 @@ export class MainHeaderComponent implements OnInit, OnDestroy {
     this.adminLteService.onControlSidebarToggleEvent();
   }
 
-
+  public changeCity(city) {
+    this.appState.CityChanged(city);
+  }
 }

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, Router } from '@angular/router';
-import { AppState, SESSION_STORAGE } from '../app.service';
+import { AppState} from '../app.service';
 
 @Injectable()
 export class AuthGuard implements CanActivate {
@@ -11,10 +11,10 @@ export class AuthGuard implements CanActivate {
   }
 
   canActivate() {
-    let str = sessionStorage.getItem(SESSION_STORAGE.USER.INFO);
-    if (str) {
-      return true;
-    }
+    // let str = sessionStorage.getItem(SESSION_STORAGE.USER.INFO);
+    // if (str) {
+    //   return true;
+    // }
     // this.router.navigate(['/login']);
     return false;
   }

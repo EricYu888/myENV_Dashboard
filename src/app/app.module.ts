@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HttpModule, Http } from '@angular/http';
+import { HttpModule } from '@angular/http';
 import {
   NgModule,
   ApplicationRef
@@ -25,20 +25,15 @@ import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
 import { HomeComponent } from './home';
-import { AboutComponent } from './about';
+// import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
 import { Ng2BootstrapModule } from 'ng2-bootstrap';
+// import { LoginComponent } from './login/login.component';
 import { MainModule } from './main/main.module';
-// import { WeatherModule } from "./weather/weather.module"
-
-import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate';
-// import { Dashboard1Component } from './dashboard1';
 import '../styles/styles.scss';
 import '../styles/theme.scss';
 import '../styles/headings.css';
-import '../assets/i18n/en.json';
-import '../assets/i18n/zh.json';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -52,24 +47,18 @@ type StoreType = {
   disposeOldHosts: () => void
 };
 
-export function createTranslateLoader(http: Http) {
-  return new TranslateStaticLoader(http, './assets/i18n', '.json');
-}
-
 /**
  * `AppModule` is the main entry point into Angular2's bootstraping process
  */
 @NgModule({
-  bootstrap: [AppComponent],
+  bootstrap: [ AppComponent ],
   declarations: [
     AppComponent,
-    AboutComponent,
+    // AboutComponent,
     HomeComponent,
     NoContentComponent,
     XLargeDirective,
-
-
-    // Dashboard1Component
+    // LoginComponent,
   ],
   imports: [ // import Angular's modules
     BrowserModule,
@@ -77,13 +66,7 @@ export function createTranslateLoader(http: Http) {
     HttpModule,
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules }),
     Ng2BootstrapModule.forRoot(),
-    TranslateModule.forRoot({
-      provide: TranslateLoader,
-      useFactory: (createTranslateLoader),
-      deps: [Http]
-    }),
-    MainModule,
- 
+    MainModule
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
@@ -95,7 +78,7 @@ export class AppModule {
   constructor(
     public appRef: ApplicationRef,
     public appState: AppState
-  ) { }
+  ) {}
 
   public hmrOnInit(store: StoreType) {
     if (!store || !store.state) {
@@ -123,7 +106,7 @@ export class AppModule {
     // recreate root elements
     store.disposeOldHosts = createNewHosts(cmpLocation);
     // save input values
-    store.restoreInputValues = createInputTransfer();
+    store.restoreInputValues  = createInputTransfer();
     // remove styles
     removeNgStyles();
   }

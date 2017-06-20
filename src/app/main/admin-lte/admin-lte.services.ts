@@ -116,6 +116,8 @@ export class AdminLteService {
     };
 
     this.mySkins = [
+      'theme-dark',
+      'theme-light',
       'skin-blue',
       'skin-black',
       'skin-red',
@@ -184,6 +186,7 @@ export class AdminLteService {
     let footerHeight = $('.main-footer').outerHeight() || 0;
     let neg = $('.main-header').outerHeight() + footerHeight;
     let WindowHeight = $(window).height();
+
     let sidebarHeight = $('.sidebar').height() || 0;
     // Set the min-height of the content and sidebar based on the
     // the height of the document.
@@ -191,7 +194,7 @@ export class AdminLteService {
       $('.content-wrapper, .right-side').css('min-height', WindowHeight - footerHeight);
     } else {
       let postSetWidth;
-      if (WindowHeight >= sidebarHeight + $('.main-header').outerHeight()) {
+      if (WindowHeight >= sidebarHeight) {
         $('.content-wrapper, .right-side').css('min-height', WindowHeight - neg);
         postSetWidth = WindowHeight - neg;
       } else {
@@ -207,8 +210,6 @@ export class AdminLteService {
         }
       }
     }
-    // console.log('footerHeight , neg , WindowHeight, sidebarHeight');
-    // console.log(footerHeight, neg, WindowHeight, sidebarHeight);
   }
 
   public adminLteLayoutFixSidebar() {
@@ -306,37 +307,37 @@ export class AdminLteService {
     this.adminLteControlSidebarFix($('.control-sidebar'));
   }
 
-  // public changeSkin(cls) {
-  //   for (let i of this.mySkins) {
-  //     $('body').removeClass(i);
-  //   }
-  //   $('body').addClass(cls);
-  //   this.skinStore('skin', cls);
-  //   return false;
-  // }
+  public changeSkin(cls) {
+    for (let i of this.mySkins) {
+      $('body').removeClass(i);
+    }
+    $('body').addClass(cls);
+    this.skinStore('skin', cls);
+    return false;
+  }
 
-  // public skinGet(name) {
-  //   if (typeof (Storage) !== 'undefined') {
-  //     return localStorage.getItem(name);
-  //   } else {
-  //     window.alert('Please use a modern browser to properly view this template!');
-  //   }
-  // }
+  public skinGet(name) {
+    if (typeof (Storage) !== 'undefined') {
+      return localStorage.getItem(name);
+    } else {
+      window.alert('Please use a modern browser to properly view this template!');
+    }
+  }
 
-  // public skinStore(name, val) {
-  //   if (typeof (Storage) !== 'undefined') {
-  //     localStorage.setItem(name, val);
-  //   } else {
-  //     window.alert('Please use a modern browser to properly view this template!');
-  //   }
-  // }
+  public skinStore(name, val) {
+    if (typeof (Storage) !== 'undefined') {
+      localStorage.setItem(name, val);
+    } else {
+      window.alert('Please use a modern browser to properly view this template!');
+    }
+  }
 
-  // public setup() {
-  //   let tmp = this.skinGet('skin');
-  //   if (tmp && $.inArray(tmp, this.mySkins)) {
-  //     this.changeSkin(tmp);
-  //   }
-  // }
+  public setup() {
+    let tmp = this.skinGet('skin');
+    if (tmp && $.inArray(tmp, this.mySkins)) {
+      this.changeSkin(tmp);
+    }
+  }
 
   private adminLteControlSidebarFix(sidebar) {
     sidebar.css({

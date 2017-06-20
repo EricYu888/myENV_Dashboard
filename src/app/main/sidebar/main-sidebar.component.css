@@ -1,14 +1,3 @@
-.pull-right-container .fa .fa-angle-right .decrator {
-  margin-right: 8px !important
-}
-
-.sidebar-menu li > a > .pull-right-container > .fa-angle-down {
-  width: auto;
-  height: auto;
-  padding: 0;
-  margin-right: 10px !important;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+.active {
+    color:white !important;
 }

@@ -3,15 +3,6 @@
 
   <hr>
 
-  <h2>{{ 'HOME.TITLE' | translate }}</h2>
-  <!--<label>
-            {{ 'HOME.SELECT' | translate }}
-            <select #langSelect (change)="translate.use(langSelect.value)">
-                <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
-            </select>
-        </label>-->
-  <hr>
-
   <div>
     For hot module reloading run
     <pre>npm run start:hmr</pre>
@@ -24,10 +15,13 @@
 
     <form (ngSubmit)="submitState(localState.value)" autocomplete="off">
 
-      <input [value]="localState.value" (input)="localState.value = $event.target.value" placeholder="Submit Local State to App State"
+      <input
+        [value]="localState.value"
+        (input)="localState.value = $event.target.value"
+        placeholder="Submit Local State to App State"
         autofocus>
 
-        <button>Submit Value</button>
+      <button>Submit Value</button>
     </form>
     <!--
         <input type="text" [value]="localState.value" (input)="localState.value = $event.target.value" autofocus>
@@ -39,7 +33,7 @@
     <pre>this.localState = {{ localState | json }}</pre>
 
   </div>
-  <div>
+   <div>
     <alert type="success">
       <strong>Well done!</strong> You successfully read this important alert message.
     </alert>

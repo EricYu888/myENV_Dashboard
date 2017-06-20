@@ -1,16 +1,8 @@
-import { Component, OnInit, OnDestroy, AfterViewInit, ViewChild } from '@angular/core';
+import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import { AdminLteService } from './admin-lte/admin-lte.services';
-import { ThemeService } from './theme/theme.service';
-import {
-  TranslateService,
-  DefaultLangChangeEvent,
-  TranslationChangeEvent,
-  LangChangeEvent
-} from 'ng2-translate';
+import { Router, ActivatedRoute } from '@angular/router';
+import { Subject, BehaviorSubject, Subscription } from 'rxjs';
 
-import { MainService } from './main.service';
-import { User } from './models/user';
-import { AppState } from './../app.service'
 declare var $: any;
 declare var AdminLTEOptions: any;
 @Component({
@@ -22,35 +14,23 @@ export class MainComponent implements OnInit, OnDestroy, AfterViewInit {
   public bodyClasses: string;
   public body: any;
   public adminLte: any;
-  public language: string;
-  @ViewChild('routeCtrl') public routeCtrl;
+  private toggle: Subject<any> = new BehaviorSubject<any>(null);
 
   constructor(
     public adminLteService: AdminLteService,
-    public themeService: ThemeService,
-    public translate: TranslateService,
-    public mainService: MainService,
-    public app: AppState) {
+    public router: Router,
+    public route: ActivatedRoute
+  ) {
     // this.bodyClasses = 'skin-blue sidebar-mini';
     // this.body = document.getElementsByTagName('body')[0];
     this.adminLte = adminLteService.getAdminLte();
-    // this.language = 'zh';
-    // this.translate.setDefaultLang(this.language);
-    // this.translate.use(this.language);
-
-    // setTimeout(() => {
-    //   this.mainService.setCurrentUser(new User('mark', ''));
-    // }, 5000);
-
   }
 
   public ngOnInit() {
     // add the the body classes
     // this.body.classList.add('skin-blue');
     // this.body.classList.add('sidebar-mini');
-    // this.app.onLocalUserLoadSuccessfully();
-     
-
+    this.router.navigate(['weather/weather-center'], { relativeTo: this.route });
   }
 
   public onContentWrapperClick() {
@@ -90,27 +70,39 @@ export class MainComponent implements OnInit, OnDestroy, AfterViewInit {
         size: this.adminLte.options.navbarMenuSlimscrollWidth
       }).css('width', '100%');
     }
-    this.themeService.setup();
+    this.adminLteService.setup();
   }
 
-  public getCaseDetailUrlParams() {
-    return this.routeCtrl.getUrlParamsBy(this.routeCtrl.linkUrls.caseDetail);
+
+  public broadcastToggleChanged(data: boolean) {
+    this.toggle.next(data);
   }
 
-  public getAlertDetailUrlParams() {
-    return this.routeCtrl.getUrlParamsBy(this.routeCtrl.linkUrls.alertDetail);;
+  public registerToggleChangeListener(onChanged: (data: string) => void): Subscription {
+    return this.toggle.subscribe({
+      next: (u) => {
+        if (u !== null) {
+          onChanged(u);
+        }
+      }
+    });
   }
 
-  public getRelativeUrlParams(key) {
-    return this.routeCtrl.getUrlParamsBy(key);
+  public unregisterToggleChangeListener() {
+    try {
+      this.toggle.unsubscribe();
+    } catch (error) {
+
+    }
   }
 
-  public jumpToUrl(urlParams, params?, paramsKey?) {
-    this.routeCtrl.locateTo(urlParams, params, paramsKey);
+  public fromMainHeaderTgl(toggleStatus) {
+    // if (toggleStatus === true) {
+    //   this.broadcastToggleChanged(true);
+    // } else {
+    //   this.broadcastToggleChanged(false);
+    // }
+    // alert(toggleStatus);
   }
-
-  public updateCustomizedMenu(former, nowData) {
-    this.routeCtrl.updateCustomizedMenu(former, nowData);
-  }
-
+ 
 }

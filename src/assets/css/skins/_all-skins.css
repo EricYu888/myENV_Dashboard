@@ -11,8 +11,8 @@
 .skin-blue .main-header .navbar {
   /*background-color: #265dab;*/
   background: -moz-linear-gradient(0deg, #357CB7 0, #22438F 100%);/* FF3.6+ */
-  background: -webkit-gradient(linear, 0deg, color-stop(0, 357CB7), color-stop(100%, 22438F));/* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(0deg, #357CB7 0, #22438F 100%);/* Chrome10+,Safari5.1+ */
+  background: -webkit-gradient(linear, 90deg, color-stop(0, #357CB7), color-stop(100%, #22438F));/* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(90deg, #357CB7 0, #22438F 100%);/* Chrome10+,Safari5.1+ */
   background: -o-linear-gradient(0deg, #357CB7 0, #22438F 100%);/* Opera 11.10+ */
   background: -ms-linear-gradient(0deg, #357CB7 0, #22438F 100%);/* IE10+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1'); /* for IE */
@@ -49,10 +49,10 @@
     background-color: rgba(255, 255, 255, 0.1);
   }
   .skin-blue .main-header .navbar .dropdown-menu li a {
-    color: #fff;
+    /*color: #fff;*/
   }
   .skin-blue .main-header .navbar .dropdown-menu li a:hover {
-    background: #367fa9;
+    background: #f6f6f6;
   }
 }
 .skin-blue .main-header .logo {
