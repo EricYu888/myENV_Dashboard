@@ -14,7 +14,7 @@ export class WeatherService {
 
   public getCurrentWeatherByCity(city) {
     let currentCity = null;
-    let beijing = {
+    let guangzhou = {
       temp: "30",
       weather: "Rain",
       wet: "73",
@@ -39,8 +39,8 @@ export class WeatherService {
       rain: "0"
     }
 
-    if (city === "beijing") {
-      currentCity = beijing;
+    if (city === "guangzhou") {
+      currentCity = guangzhou;
     }
     else if (city === "shanghai") {
       currentCity = shanghai;

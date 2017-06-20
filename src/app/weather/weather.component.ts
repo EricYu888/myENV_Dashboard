@@ -17,21 +17,65 @@ export class WeatherComponent implements OnInit, OnDestroy {
     public mSub: Subscription;
     private sfwChart1: any;
     private option: any;
+    private tideArr = [];
     private color = ['orange', 'lightblue'];
+    private tide = [];
+    private topTide = "";
+    private bottomTide = "";
+    private defaultTide = [16, 20, 24, 28, 31, 33.5, 35.5, 37, 38.5, 40, 38, 35, 31, 27, 24, 21, 18
+        , 16, 14, 12, 10, 13, 15, 17];
+    private defaultTopTide = " 11:30 am \n8m";
+    private defaultBottomTide = ' 17:00 pm \n2m';
+    private zhuangzhouTide = [10, 20, 30, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22
+        , 20, 18, 16, 14, 12, 15, 17];
+    private zhuangzhouTopTide = " 08:30 am \n4m";
+    private zhuangzhouBottomTide = ' 7:00 pm \n1m';
+    private shanghaiTide = [10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 27, 26, 25, 24, 23, 22
+        , 20, 18, 16, 14, 12, 15, 17];
+    private shanghaiTopTide = " 12:00 am \n5m";
+    private shanghaiBottomTide = ' 7:00 pm \n3m';
+    private dalianTide = [30, 28, 26, 24, 22, 20, 19, 18, 17, 16, 18, 19, 22, 25, 24, 23, 22
+        , 20, 18, 16, 14, 12, 15, 17];
+    private dalianTopTide = " 07:00 am \n4m";
+    private dalianBottomTide = ' 05：30 pm \n1.5m';
+
     constructor(public appState: AppState,
         public weatherService: WeatherService
     ) {
     }
     public ngOnInit() {
-
         this.mSub = this.appState.registerCityChangeListener((city) => {
             this.changeCity(city);
         });
 
         this.sfwChart1 = echarts.init(document.getElementById('sunSet'));
-        this.bindChart();
+        this.bindChart('currentCity');
     }
-    public bindChart() {
+
+
+
+    public bindChart(city) {
+        this.tide = [];
+        if (city === "currentCity") {
+            this.tide = this.defaultTide;
+            this.topTide = this.defaultTopTide;
+            this.bottomTide = this.defaultBottomTide;
+        }
+        else if (city === "guangzhou") {
+            this.tide = this.zhuangzhouTide;
+            this.topTide = this.zhuangzhouTopTide;
+            this.bottomTide = this.zhuangzhouBottomTide;
+        }
+        else if (city === "shanghai") {
+            this.tide = this.shanghaiTide;
+            this.topTide = this.shanghaiTopTide;
+            this.bottomTide = this.shanghaiBottomTide;
+        }
+        else if (city === "dalian") {
+            this.tide = this.dalianTide;
+            this.topTide = this.dalianTopTide;
+            this.bottomTide = this.dalianBottomTide;
+        }
         this.sfwChart1.clear();
         this.option = {
             title: {
@@ -47,14 +91,14 @@ export class WeatherComponent implements OnInit, OnDestroy {
             },
             tooltip: {
                 trigger: 'axis',
-                alwaysShowContent: true,
-                axisPointer: {
-                    type: 'line'
-                },
-                formatter: (item) => {
-                    return "";
-                },
-                show: false
+                // alwaysShowContent: true,
+                // axisPointer: {
+                //     type: 'line'
+                // },
+                // formatter: (item) => {
+                //     return "";
+                // },
+                //show: false
             },
             legend: {
                 data: [{
@@ -87,20 +131,6 @@ export class WeatherComponent implements OnInit, OnDestroy {
                 {
                     type: 'category',
                     boundaryGap: true,
-                    // axisPointer: {
-                    //     value: '07:30',
-                    //     snap: true,
-                    //     show: true,
-                    //     lineStyle: {
-                    //         color: '#004E52',
-                    //         opacity: 1,
-                    //         width: 10
-                    //     },
-                    //     handle: {
-                    //         show: true,
-                    //         color: 'rgba(255,255,255,0)'
-                    //     }
-                    // },
                     axisLabel: {
                         show: true,
                         interval: 6,
@@ -197,22 +227,20 @@ export class WeatherComponent implements OnInit, OnDestroy {
                             }
                         }
                     },
-                    data: [16, 20, 24, 28, 31, 33.5, 35.5, 37, 38.5, 40, 38, 35, 31, 27, 24, 21, 18
-                        , 16, 14, 12, 10, 13, 15, 17
-                    ],
+                    data: this.tide,
                     markPoint: {
                         data: [
                             {
                                 type: 'max',
                                 name: '',
                                 symbol: 'image://../assets/img/rect.png',
-                                symbolSize: 60,
+                                symbolSize: 70,
                                 itemStyle: {
                                     normal: {
                                         label: {
                                             show: true,
                                             formatter: (any) => {
-                                                return " 11:30 am \n18m"
+                                                return this.topTide
                                             },
                                             textStyle: {
                                                 color: '#2a7388',
@@ -227,12 +255,12 @@ export class WeatherComponent implements OnInit, OnDestroy {
                                 type: 'min',
                                 name: ' ',
                                 symbol: 'image://../assets/img/rect.png',
-                                symbolSize: 52,
+                                symbolSize: 70,
                                 itemStyle: {
                                     normal: {
                                         label: {
                                             show: true,
-                                            formatter: ' 17:00 pm \n10m',
+                                            formatter: this.bottomTide,
                                             textStyle: {
                                                 color: '#2a7388'
                                             }
@@ -259,6 +287,10 @@ export class WeatherComponent implements OnInit, OnDestroy {
             this.sfwChart1.resize();
         })
     }
+
+
+
+
     public changeCity(city) {
         var data = this.weatherService.getCurrentWeatherByCity(city);
         if (data != null) {
@@ -269,6 +301,16 @@ export class WeatherComponent implements OnInit, OnDestroy {
             $("#rain").html(data.rain);
             $("#pic").removeClass().addClass(data.pic);
         }
+        // if (city === "guangzhou") {
+
+        // }
+        // else if (city === "shanghai") {
+
+        // }
+        // else {
+
+        // }
+        this.bindChart(city);
 
     }
 
