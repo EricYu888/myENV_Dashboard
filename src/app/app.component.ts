@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
   public url = 'https://twitter.com/AngularClass';
 
   constructor(
-    public appState: AppState
+    public appState: AppState  
   ) {}
 
   public ngOnInit() {
